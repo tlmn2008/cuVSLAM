@@ -30,7 +30,13 @@ macro(setup_cuvslam_settings)
     set(CMAKE_CUDA_STANDARD_REQUIRED ON)
     set(CMAKE_CXX_VISIBILITY_PRESET hidden)
     set(CMAKE_VISIBILITY_INLINES_HIDDEN ON)
-    set(CMAKE_CUDA_RUNTIME_LIBRARY Static)
+    # CoreX/ivcore11: its libcudart_static.a is not self-contained (pulls an undefined
+    # CreateLogger from libixthunk), so use the shared CUDA runtime there. NVIDIA stays static.
+    if(CMAKE_CUDA_COMPILER MATCHES "corex")
+        set(CMAKE_CUDA_RUNTIME_LIBRARY Shared)
+    else()
+        set(CMAKE_CUDA_RUNTIME_LIBRARY Static)
+    endif()
 
     # Note: we make RelWithDebInfo a *debug* config but with optimization options
     # this way we can have assertions and other debug checks enabled but have fast execution

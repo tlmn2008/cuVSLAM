@@ -1,0 +1,549 @@
+-- 
+-- Configured Eigen 3.4.1
+-- 
+CMake Warning (dev) at /usr/local/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(libjpeg) is deprecated, call
+  FetchContent_MakeAvailable(libjpeg) instead.  Policy CMP0169 can be set to
+  OLD to allow FetchContent_Populate(libjpeg) to be called directly for now,
+  but the ability to call it with declared details will be removed completely
+  in a future version.
+Call Stack (most recent call first):
+  cmake/ext/libjpeg.cmake:29 (FetchContent_Populate)
+  cmake/FindExt.cmake:32 (include)
+  CMakeLists.txt:79 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Deprecation Warning at build/_deps/jsoncpp-src/CMakeLists.txt:17 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- JsonCpp Version: 1.9.6
+-- Build spdlog: 1.17.0
+-- Build type: Release
+-- Building for target architecture: x86_64
+-- Found AWK program: /usr/bin/nawk
+-- Creating standard configuration
+CMake Warning (dev) at /usr/local/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(cnpy) is deprecated, call
+  FetchContent_MakeAvailable(cnpy) instead.  Policy CMP0169 can be set to OLD
+  to allow FetchContent_Populate(cnpy) to be called directly for now, but the
+  ability to call it with declared details will be removed completely in a
+  future version.
+Call Stack (most recent call first):
+  cmake/ext/cnpy.cmake:33 (FetchContent_Populate)
+  cmake/FindExt.cmake:39 (include)
+  CMakeLists.txt:79 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/local/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(circularbuffer) is deprecated, call
+  FetchContent_MakeAvailable(circularbuffer) instead.  Policy CMP0169 can be
+  set to OLD to allow FetchContent_Populate(circularbuffer) to be called
+  directly for now, but the ability to call it with declared details will be
+  removed completely in a future version.
+Call Stack (most recent call first):
+  cmake/ext/circularbuffer.cmake:28 (FetchContent_Populate)
+  cmake/FindExt.cmake:40 (include)
+  CMakeLists.txt:79 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/local/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(dense_hash_map) is deprecated, call
+  FetchContent_MakeAvailable(dense_hash_map) instead.  Policy CMP0169 can be
+  set to OLD to allow FetchContent_Populate(dense_hash_map) to be called
+  directly for now, but the ability to call it with declared details will be
+  removed completely in a future version.
+Call Stack (most recent call first):
+  cmake/ext/dense_hash_map.cmake:29 (FetchContent_Populate)
+  cmake/FindExt.cmake:41 (include)
+  CMakeLists.txt:79 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/local/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(lmdb) is deprecated, call
+  FetchContent_MakeAvailable(lmdb) instead.  Policy CMP0169 can be set to OLD
+  to allow FetchContent_Populate(lmdb) to be called directly for now, but the
+  ability to call it with declared details will be removed completely in a
+  future version.
+Call Stack (most recent call first):
+  cmake/ext/lmdb.cmake:28 (FetchContent_Populate)
+  cmake/FindExt.cmake:44 (include)
+  CMakeLists.txt:79 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found CUDA version: 10.2.89
+-- CUDA Toolkit target architecture directory: /usr/local/corex
+-- Found OpenCV: /usr (found version "4.6.0")
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+CMake Warning at doc/CMakeLists.txt:25 (message):
+  Doxygen not found, skipping documentation generation
+
+
+-- Configuring done (2.6s)
+CMake Warning at cmake/cuVSLAMUtils.cmake:152 (add_executable):
+  Cannot generate a safe runtime search path for target camera_test because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libopencv_stitching.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_alphamat.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_aruco.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_barcode.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_bgsegm.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_bioinspired.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_ccalib.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dnn_objdetect.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dnn_superres.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dpm.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_face.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_fuzzy.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_hdf.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_hfs.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_img_hash.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_intensity_transform.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_line_descriptor.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_mcc.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_quality.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_rapid.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_reg.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_rgbd.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_saliency.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_shape.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_stereo.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_structured_light.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_superres.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_surface_matching.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_tracking.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_videostab.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_wechat_qrcode.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_xobjdetect.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_xphoto.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_highgui.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_datasets.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_plot.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_text.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_ml.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_phase_unwrapping.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_optflow.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_ximgproc.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_video.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_videoio.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_imgcodecs.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_objdetect.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_calib3d.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dnn.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_features2d.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_flann.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_photo.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_imgproc.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_core.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  libs/camera/test/CMakeLists.txt:36 (setup_test_project)
+
+
+CMake Warning at cmake/cuVSLAMUtils.cmake:217 (add_executable):
+  Cannot generate a safe runtime search path for target selectionVisualizer
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libopencv_stitching.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_alphamat.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_aruco.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_barcode.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_bgsegm.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_bioinspired.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_ccalib.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dnn_objdetect.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dnn_superres.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dpm.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_face.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_fuzzy.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_hdf.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_hfs.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_img_hash.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_intensity_transform.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_line_descriptor.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_mcc.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_quality.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_rapid.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_reg.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_rgbd.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_saliency.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_shape.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_stereo.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_structured_light.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_superres.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_surface_matching.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_tracking.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_videostab.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_wechat_qrcode.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_xobjdetect.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_xphoto.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_highgui.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_datasets.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_plot.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_text.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_ml.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_phase_unwrapping.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_optflow.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_ximgproc.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_video.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_videoio.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_imgcodecs.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_objdetect.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_calib3d.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dnn.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_features2d.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_flann.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_photo.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_imgproc.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_core.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  tools/selection_visualizer/CMakeLists.txt:35 (setup_app)
+
+
+CMake Warning at cmake/cuVSLAMUtils.cmake:217 (add_executable):
+  Cannot generate a safe runtime search path for target sof_visualizer
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libopencv_stitching.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_alphamat.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_aruco.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_barcode.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_bgsegm.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_bioinspired.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_ccalib.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dnn_objdetect.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dnn_superres.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dpm.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_face.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_fuzzy.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_hdf.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_hfs.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_img_hash.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_intensity_transform.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_line_descriptor.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_mcc.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_quality.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_rapid.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_reg.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_rgbd.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_saliency.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_shape.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_stereo.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_structured_light.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_superres.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_surface_matching.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_tracking.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_videostab.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_wechat_qrcode.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_xobjdetect.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_xphoto.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_highgui.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_datasets.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_plot.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_text.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_ml.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_phase_unwrapping.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_optflow.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_ximgproc.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_video.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_videoio.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_imgcodecs.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_objdetect.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_calib3d.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dnn.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_features2d.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_flann.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_photo.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_imgproc.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_core.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  tools/sof_visualizer/CMakeLists.txt:35 (setup_app)
+
+
+CMake Warning at cmake/cuVSLAMUtils.cmake:217 (add_executable):
+  Cannot generate a safe runtime search path for target undistort because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libopencv_stitching.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_alphamat.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_aruco.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_barcode.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_bgsegm.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_bioinspired.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_ccalib.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dnn_objdetect.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dnn_superres.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dpm.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_face.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_fuzzy.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_hdf.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_hfs.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_img_hash.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_intensity_transform.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_line_descriptor.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_mcc.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_quality.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_rapid.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_reg.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_rgbd.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_saliency.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_shape.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_stereo.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_structured_light.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_superres.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_surface_matching.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_tracking.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_videostab.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_wechat_qrcode.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_xobjdetect.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_xphoto.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_highgui.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_datasets.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_plot.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_text.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_ml.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_phase_unwrapping.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_optflow.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_ximgproc.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_video.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_videoio.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_imgcodecs.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_objdetect.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_calib3d.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_dnn.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_features2d.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_flann.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_photo.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_imgproc.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+    runtime library [libopencv_core.so.406] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/local/corex/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  tools/undistort/CMakeLists.txt:37 (setup_app)
+
+
+-- Generating done (0.3s)
+-- Build files have been written to: /home/repos/cuVSLAM/build

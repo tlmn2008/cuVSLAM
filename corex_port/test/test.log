@@ -1,0 +1,1005 @@
+UpdateCTestConfiguration  from :/home/repos/cuVSLAM/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/repos/cuVSLAM/build/DartConfiguration.tcl
+Test project /home/repos/cuVSLAM/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+      Start  1: camera_test
+
+1: Test command: /home/repos/cuVSLAM/build/bin/camera_test
+1: Working Directory: /home/repos/cuVSLAM/build/libs/camera/test
+1: Test timeout computed to be: 600
+1: [==========] Running 8 tests from 2 test suites.
+1: [----------] Global test environment set-up.
+1: [----------] 4 tests from TestCamera
+1: [ RUN      ] TestCamera.TestNormalizeFishEye
+1: [       OK ] TestCamera.TestNormalizeFishEye (44 ms)
+1: [ RUN      ] TestCamera.TestNormalizeRadial
+1: [       OK ] TestCamera.TestNormalizeRadial (20 ms)
+1: [ RUN      ] TestCamera.TestNormalizePolynomial
+1: [       OK ] TestCamera.TestNormalizePolynomial (24 ms)
+1: [ RUN      ] TestCamera.OpenCVvsInternal
+1: [       OK ] TestCamera.OpenCVvsInternal (2852 ms)
+1: [----------] 4 tests from TestCamera (2942 ms total)
+1: 
+1: [----------] 4 tests from FIDTest
+1: [ RUN      ] FIDTest.FID_Precision
+1: [       OK ] FIDTest.FID_Precision (0 ms)
+1: [ RUN      ] FIDTest.FID_Moderate
+1: [       OK ] FIDTest.FID_Moderate (0 ms)
+1: [ RUN      ] FIDTest.FID_Performance
+1: [       OK ] FIDTest.FID_Performance (0 ms)
+1: [ RUN      ] FIDTest.ManualSetupChecks
+1: [ERROR] manual_setup should be provided if mode is manual
+1: [       OK ] FIDTest.ManualSetupChecks (0 ms)
+1: [ DISABLED ] FIDTest.DISABLED_ManualValidSetups
+1: [----------] 4 tests from FIDTest (0 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 8 tests from 2 test suites ran. (2942 ms total)
+1: [  PASSED  ] 8 tests.
+1: 
+1:   YOU HAVE 4 DISABLED TESTS
+1: 
+ 1/15 Test  #1: camera_test ......................   Passed    3.32 sec
+test 2
+      Start  2: camera_rig_edex_test
+
+2: Test command: /home/repos/cuVSLAM/build/bin/camera_rig_edex_test
+2: Working Directory: /home/repos/cuVSLAM/build/libs/camera_rig_edex/test
+2: Test timeout computed to be: 600
+2: [==========] Running 0 tests from 0 test suites.
+2: [==========] 0 tests from 0 test suites ran. (0 ms total)
+2: [  PASSED  ] 0 tests.
+2: 
+2:   YOU HAVE 1 DISABLED TEST
+2: 
+ 2/15 Test  #2: camera_rig_edex_test .............   Passed    0.15 sec
+test 3
+      Start  3: common_test
+
+3: Test command: /home/repos/cuVSLAM/build/bin/common_test
+3: Working Directory: /home/repos/cuVSLAM/build/libs/common/test
+3: Test timeout computed to be: 600
+3: [==========] Running 61 tests from 13 test suites.
+3: [----------] Global test environment set-up.
+3: [----------] 1 test from TestcuVSLAMTraceMacros
+3: [ DISABLED ] TestcuVSLAMTraceMacros.DISABLED_TraceMacros
+3: [ RUN      ] TestcuVSLAMTraceMacros.TraceMacroSpew
+3: [       OK ] TestcuVSLAMTraceMacros.TraceMacroSpew (0 ms)
+3: [----------] 1 test from TestcuVSLAMTraceMacros (0 ms total)
+3: 
+3: [----------] 1 test from TestcuVSLAMLimits
+3: [ RUN      ] TestcuVSLAMLimits.TestBasicTrigLimits
+3: [       OK ] TestcuVSLAMLimits.TestBasicTrigLimits (0 ms)
+3: [----------] 1 test from TestcuVSLAMLimits (0 ms total)
+3: 
+3: [----------] 1 test from TestCameraIndexedContainers
+3: [ RUN      ] TestCameraIndexedContainers.SparseFrameSentinels
+3: [       OK ] TestCameraIndexedContainers.SparseFrameSentinels (0 ms)
+3: [----------] 1 test from TestCameraIndexedContainers (0 ms total)
+3: 
+3: [----------] 1 test from TestStatisticalVariable
+3: [ RUN      ] TestStatisticalVariable.SVTest
+3: [       OK ] TestStatisticalVariable.SVTest (4 ms)
+3: [----------] 1 test from TestStatisticalVariable (4 ms total)
+3: 
+3: [----------] 11 tests from TestcuVSLAMExtentionEigenTypes
+3: [ RUN      ] TestcuVSLAMExtentionEigenTypes.ScalarAndAngleStaticCheck
+3: [       OK ] TestcuVSLAMExtentionEigenTypes.ScalarAndAngleStaticCheck (0 ms)
+3: [ RUN      ] TestcuVSLAMExtentionEigenTypes.AngleConstructAndGetValue
+3: [       OK ] TestcuVSLAMExtentionEigenTypes.AngleConstructAndGetValue (0 ms)
+3: [ RUN      ] TestcuVSLAMExtentionEigenTypes.AngleDefaultScalarOps
+3: [       OK ] TestcuVSLAMExtentionEigenTypes.AngleDefaultScalarOps (0 ms)
+3: [ RUN      ] TestcuVSLAMExtentionEigenTypes.AngleOperatorAssignAdd
+3: [       OK ] TestcuVSLAMExtentionEigenTypes.AngleOperatorAssignAdd (0 ms)
+3: [ RUN      ] TestcuVSLAMExtentionEigenTypes.AngleOperatorAssignSub
+3: [       OK ] TestcuVSLAMExtentionEigenTypes.AngleOperatorAssignSub (0 ms)
+3: [ RUN      ] TestcuVSLAMExtentionEigenTypes.AngleOperatorAssignMul
+3: [       OK ] TestcuVSLAMExtentionEigenTypes.AngleOperatorAssignMul (0 ms)
+3: [ RUN      ] TestcuVSLAMExtentionEigenTypes.AngleOperatorAssignDiv
+3: [       OK ] TestcuVSLAMExtentionEigenTypes.AngleOperatorAssignDiv (0 ms)
+3: [ RUN      ] TestcuVSLAMExtentionEigenTypes.AngleNormalize
+3: [       OK ] TestcuVSLAMExtentionEigenTypes.AngleNormalize (0 ms)
+3: [ RUN      ] TestcuVSLAMExtentionEigenTypes.TypeTransformDecompositionTranslation
+3: [       OK ] TestcuVSLAMExtentionEigenTypes.TypeTransformDecompositionTranslation (0 ms)
+3: [ RUN      ] TestcuVSLAMExtentionEigenTypes.TransformDecompositionEulerRotation
+3: [       OK ] TestcuVSLAMExtentionEigenTypes.TransformDecompositionEulerRotation (0 ms)
+3: [ RUN      ] TestcuVSLAMExtentionEigenTypes.TransformDecompositionEulerRotationStable
+3: [       OK ] TestcuVSLAMExtentionEigenTypes.TransformDecompositionEulerRotationStable (0 ms)
+3: [----------] 11 tests from TestcuVSLAMExtentionEigenTypes (0 ms total)
+3: 
+3: [----------] 4 tests from TestcuVSLAMErrorCodeTests
+3: [ RUN      ] TestcuVSLAMErrorCodeTests.ErrorCodeStaticCheck
+3: [       OK ] TestcuVSLAMErrorCodeTests.ErrorCodeStaticCheck (0 ms)
+3: [ RUN      ] TestcuVSLAMErrorCodeTests.ErrorCodeDefault
+3: [       OK ] TestcuVSLAMErrorCodeTests.ErrorCodeDefault (0 ms)
+3: [ RUN      ] TestcuVSLAMErrorCodeTests.ErrorCodeErrors
+3: [       OK ] TestcuVSLAMErrorCodeTests.ErrorCodeErrors (0 ms)
+3: [ RUN      ] TestcuVSLAMErrorCodeTests.ErrorCodeSuccess
+3: [       OK ] TestcuVSLAMErrorCodeTests.ErrorCodeSuccess (0 ms)
+3: [----------] 4 tests from TestcuVSLAMErrorCodeTests (0 ms total)
+3: 
+3: [----------] 1 test from TestEigen
+3: [ DISABLED ] TestEigen.DISABLED_TestEignValues
+3: [ RUN      ] TestEigen.TestVectorSum
+3: [       OK ] TestEigen.TestVectorSum (1 ms)
+3: [----------] 1 test from TestEigen (1 ms total)
+3: 
+3: [----------] 1 test from ImageDropper
+3: [ RUN      ] ImageDropper.Demo
+3: Target drop rate = 0.25
+3: XXX.X.X..X....X.......X...X.X......X....X...XXX..X.......XX......XX.......XX..X
+3: X....X...............X..XX.X...X.....X.X.X........X........X...XX.....X........
+3: ......X...X.........X.XX.....X..XX....X...X....X...X..X..X.........X...X.X...X.
+3: ..XXXX.....X.X.XXXX.....X.........X...X.X....X.XX.XX....X.X.X....X.X....XX..X..
+3: .X..............X..X.....XXX....X.........X...X......................X....XX...
+3: ...X...XX.X..X...XX..X.......X...XX.X....X.XX.......XX.X....XX..........X...X..
+3: .......X.X..X.X....X...X....X.XX....X..X............X.XXX..X.XXX....XX.X.....XX
+3: ........X..XX..X....X.........X....X.X.....X....XX...X........X.X.X.X.X........
+3: Test drop rate = 0.25
+3: 
+3: ...........X.....X........XX....X...............X..XXX..X.......X.X.......XX...
+3: .......X......X........X..XXXX..XX.X........X.X..XX.....X.X...X......XX.X......
+3: ........X........X...X.X.XX.X..X...XX........XXX...X..X..X...X.X........X......
+3: ..X...........X.......X....X.XXX.X..X....X....XXX..X..XX.X.......X..X..X...XX..
+3: ...XXX.....XX..X...XX.XX.XX.XXX.X........XX...XX...............X.....XXXX.XX...
+3: ..XX.X.XX..X..........X......X......X........X....X.....X..XX.X..X...........XX
+3: ....X.....X..X...X.X...X.X...X....X..........X.X..X............X.XXXX.XXXX.X...
+3: X.XX.X..XX.X.XX.....X..X..X...X.......X.........X........XX...XX.....X..X.X..XX
+3: Test drop rate = 0.262658
+3: 
+3: ...........................................................................XXXX
+3: ...............................................................................
+3: ................................XXXXXXXXXXXXXXXXXXXXXX.........................
+3: ...............................................................................
+3: ...XXXXXXXXXXXXXXXXXXXXXXXXX...................................................
+3: ...............................................................................
+3: ....................................................................XXXXXXXXXXX
+3: ...............................................................................
+3: Test drop rate = 0.0981013
+3: 
+3: [       OK ] ImageDropper.Demo (0 ms)
+3: [----------] 1 test from ImageDropper (0 ms total)
+3: 
+3: [----------] 4 tests from ParseUtils
+3: [ RUN      ] ParseUtils.ParseBool
+3: [       OK ] ParseUtils.ParseBool (0 ms)
+3: [ RUN      ] ParseUtils.ParseFloat
+3: [       OK ] ParseUtils.ParseFloat (0 ms)
+3: [ RUN      ] ParseUtils.ParseInt32
+3: [       OK ] ParseUtils.ParseInt32 (0 ms)
+3: [ RUN      ] ParseUtils.ParseInt64
+3: [       OK ] ParseUtils.ParseInt64 (0 ms)
+3: [----------] 4 tests from ParseUtils (0 ms total)
+3: 
+3: [----------] 10 tests from RotationUtilsTest
+3: [ RUN      ] RotationUtilsTest.CalculateRotationFromSVD_Identity
+3: [       OK ] RotationUtilsTest.CalculateRotationFromSVD_Identity (0 ms)
+3: [ RUN      ] RotationUtilsTest.CalculateRotationFromSVD_RandomRotation
+3: [       OK ] RotationUtilsTest.CalculateRotationFromSVD_RandomRotation (0 ms)
+3: [ RUN      ] RotationUtilsTest.CalculateRotationFromSVD_WithTranslation
+3: [       OK ] RotationUtilsTest.CalculateRotationFromSVD_WithTranslation (0 ms)
+3: [ RUN      ] RotationUtilsTest.CalculateRotationFromSVD_WithScaling
+3: [       OK ] RotationUtilsTest.CalculateRotationFromSVD_WithScaling (0 ms)
+3: [ RUN      ] RotationUtilsTest.CalculateRotationFromSVD_4x4Matrix
+3: [       OK ] RotationUtilsTest.CalculateRotationFromSVD_4x4Matrix (0 ms)
+3: [ RUN      ] RotationUtilsTest.CalculateRotationFromSVD_PureReflection
+3: [       OK ] RotationUtilsTest.CalculateRotationFromSVD_PureReflection (0 ms)
+3: [ RUN      ] RotationUtilsTest.CalculateRotationFromSVD_RotationWithNegatedColumn
+3: [       OK ] RotationUtilsTest.CalculateRotationFromSVD_RotationWithNegatedColumn (0 ms)
+3: [ RUN      ] RotationUtilsTest.CalculateRotationFromSVD_ScaledReflection
+3: [       OK ] RotationUtilsTest.CalculateRotationFromSVD_ScaledReflection (0 ms)
+3: [ RUN      ] RotationUtilsTest.CalculateRotationFromSVD_NegativeDeterminantRandom
+3: [       OK ] RotationUtilsTest.CalculateRotationFromSVD_NegativeDeterminantRandom (0 ms)
+3: [ RUN      ] RotationUtilsTest.CalculateRotationFromSVD_3x4Matrix
+3: [       OK ] RotationUtilsTest.CalculateRotationFromSVD_3x4Matrix (0 ms)
+3: [----------] 10 tests from RotationUtilsTest (0 ms total)
+3: 
+3: [----------] 2 tests from Stream
+3: [ RUN      ] Stream.Tum
+3: [       OK ] Stream.Tum (0 ms)
+3: [ RUN      ] Stream.MatrixAndConvert
+3: [       OK ] Stream.MatrixAndConvert (0 ms)
+3: [----------] 2 tests from Stream (0 ms total)
+3: 
+3: [----------] 18 tests from ImageDropper/DropperSuite
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/0
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/0 (33 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/1
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/1 (16 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/2
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/2 (14 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/3
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/3 (20 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/4
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/4 (24 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/5
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/5 (29 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/6
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/6 (14 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/7
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/7 (14 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/8
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/8 (15 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/9
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/9 (22 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/10
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/10 (30 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/11
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/11 (39 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/12
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/12 (26 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/13
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/13 (26 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/14
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/14 (27 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/15
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/15 (32 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/16
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/16 (38 ms)
+3: [ RUN      ] ImageDropper/DropperSuite.KeepsAverageDropRate/17
+3: [       OK ] ImageDropper/DropperSuite.KeepsAverageDropRate/17 (46 ms)
+3: [----------] 18 tests from ImageDropper/DropperSuite (473 ms total)
+3: 
+3: [----------] 6 tests from ImageDropper/RatesSuite
+3: [ RUN      ] ImageDropper/RatesSuite.SteadyDrops/0
+3: [       OK ] ImageDropper/RatesSuite.SteadyDrops/0 (0 ms)
+3: [ RUN      ] ImageDropper/RatesSuite.SteadyDrops/1
+3: [       OK ] ImageDropper/RatesSuite.SteadyDrops/1 (0 ms)
+3: [ RUN      ] ImageDropper/RatesSuite.SteadyDrops/2
+3: [       OK ] ImageDropper/RatesSuite.SteadyDrops/2 (0 ms)
+3: [ RUN      ] ImageDropper/RatesSuite.SteadyDrops/3
+3: [       OK ] ImageDropper/RatesSuite.SteadyDrops/3 (0 ms)
+3: [ RUN      ] ImageDropper/RatesSuite.SteadyDrops/4
+3: [       OK ] ImageDropper/RatesSuite.SteadyDrops/4 (0 ms)
+3: [ RUN      ] ImageDropper/RatesSuite.SteadyDrops/5
+3: [       OK ] ImageDropper/RatesSuite.SteadyDrops/5 (0 ms)
+3: [----------] 6 tests from ImageDropper/RatesSuite (1 ms total)
+3: 
+3: [----------] Global test environment tear-down
+3: [==========] 61 tests from 13 test suites ran. (481 ms total)
+3: [  PASSED  ] 61 tests.
+3: 
+3:   YOU HAVE 2 DISABLED TESTS
+3: 
+ 3/15 Test  #3: common_test ......................   Passed    0.49 sec
+test 4
+      Start  4: cuda_modules_test
+
+4: Test command: /home/repos/cuVSLAM/build/bin/cuda_modules_test
+4: Working Directory: /home/repos/cuVSLAM/build/libs/cuda_modules/test
+4: Test timeout computed to be: 600
+4: [==========] Running 35 tests from 1 test suite.
+4: [----------] Global test environment set-up.
+4: [----------] 35 tests from Cuda
+4: [ RUN      ] Cuda.convKernelGradDerivX
+4: [       OK ] Cuda.convKernelGradDerivX (521 ms)
+4: [ RUN      ] Cuda.convKernelGradDerivY
+4: [       OK ] Cuda.convKernelGradDerivY (817 ms)
+4: [ RUN      ] Cuda.SpeedUpKernelGradDerivX
+4: Basic convolver time, nano_sec = 827195
+4: Cuda convolver time, nano_sec = 104602
+4: Speedup, times = 7.908
+4: [       OK ] Cuda.SpeedUpKernelGradDerivX (118 ms)
+4: [ RUN      ] Cuda.SpeedUpKernelGradDerivY
+4: Basic convolver time, nano_sec = 789959
+4: Cuda convolver time, nano_sec = 117589
+4: Speedup, times = 6.71793
+4: [       OK ] Cuda.SpeedUpKernelGradDerivY (115 ms)
+4: [ RUN      ] Cuda.BoxBlur
+4: [       OK ] Cuda.BoxBlur (616 ms)
+4: [ RUN      ] Cuda.SpeedUpBoxBlur
+4: Basic time, nano_sec = 6801172
+4: Cuda time, nano_sec = 218459
+4: Speedup, times = 31.1324
+4: [       OK ] Cuda.SpeedUpBoxBlur (729 ms)
+4: [ RUN      ] Cuda.CheckedMulRejectsOverflow
+4: [       OK ] Cuda.CheckedMulRejectsOverflow (0 ms)
+4: [ RUN      ] Cuda.CheckedBytesRejectsOverflow
+4: [       OK ] Cuda.CheckedBytesRejectsOverflow (0 ms)
+4: [ RUN      ] Cuda.GpuArraysRejectOverflowingElementCountsBeforeAllocation
+4: [       OK ] Cuda.GpuArraysRejectOverflowingElementCountsBeforeAllocation (0 ms)
+4: [ RUN      ] Cuda.GpuImageRejectsOverflowingPitchBeforeAllocation
+4: [       OK ] Cuda.GpuImageRejectsOverflowingPitchBeforeAllocation (0 ms)
+4: [ RUN      ] Cuda.CopyTopNRejectsOutOfRangeCounts
+4: [       OK ] Cuda.CopyTopNRejectsOutOfRangeCounts (0 ms)
+4: [ RUN      ] Cuda.CheckCompatibility
+4: [       OK ] Cuda.CheckCompatibility (0 ms)
+4: [ RUN      ] Cuda.WarmUpGpu
+4: [       OK ] Cuda.WarmUpGpu (0 ms)
+4: [ DISABLED ] Cuda.DISABLED_GFTT
+4: [ DISABLED ] Cuda.DISABLED_GFTTSpeedUp
+4: [ RUN      ] Cuda.GradientPyramid
+4: [       OK ] Cuda.GradientPyramid (342 ms)
+4: [ RUN      ] Cuda.GradientPyramidSpeedUp
+4: Basic time, nano_sec = 2301859
+4: Cuda time, nano_sec = 566364
+4: Speedup, times = 4.06427
+4: [       OK ] Cuda.GradientPyramidSpeedUp (335 ms)
+4: [ RUN      ] Cuda.ImageGaussianScaler
+4: Basic convolver time, nano_sec = 16882387
+4: Cuda convolver time, nano_sec = 311098
+4: Speedup, times = 54.267
+4: [       OK ] Cuda.ImageGaussianScaler (1745 ms)
+4: [ RUN      ] Cuda.ImagePyramid
+4: [       OK ] Cuda.ImagePyramid (52 ms)
+4: [ RUN      ] Cuda.ImagePyramidSpeedup
+4: Basic time, nano_sec = 22072544
+4: Cuda time, nano_sec = 636361
+4: Speedup, times = 34.6856
+4: [       OK ] Cuda.ImagePyramidSpeedup (2296 ms)
+4: [ RUN      ] Cuda.ImagePyramidU8
+4: [       OK ] Cuda.ImagePyramidU8 (9 ms)
+4: [ RUN      ] Cuda.ImagePyramidU8Prefilter
+4: [       OK ] Cuda.ImagePyramidU8Prefilter (11 ms)
+4: [ RUN      ] Cuda.ImagePyramidU8Speedup
+4: Basic time, nano_sec = 1086242
+4: Cuda time, nano_sec = 637092
+4: Speedup, times = 1.705
+4: [       OK ] Cuda.ImagePyramidU8Speedup (197 ms)
+4: [ RUN      ] Cuda.ImagePyramidU8PrefilterSpeedup
+4: Basic time, nano_sec = 8030169
+4: Cuda time, nano_sec = 839282
+4: Speedup, times = 9.5679
+4: [       OK ] Cuda.ImagePyramidU8PrefilterSpeedup (912 ms)
+4: [ DISABLED ] Cuda.DISABLED_LKTracker
+4: [ DISABLED ] Cuda.DISABLED_LKTrackerSpeedup
+4: [ DISABLED ] Cuda.DISABLED_LKTrackerHorizontal
+4: [ DISABLED ] Cuda.DISABLED_LKTrackerHorizontalSpeedup
+4: [ RUN      ] Cuda.SpeedupSBAUpdateModel
+4: Basic time, nano_sec = 310332
+4: Cuda time, nano_sec = 16256
+4: Speedup, times = 19.0893
+4: [       OK ] Cuda.SpeedupSBAUpdateModel (36 ms)
+4: [ DISABLED ] Cuda.DISABLED_SBAUpdateModel
+4: [ RUN      ] Cuda.SBABuildFullSystemSpeedUp
+4: Basic time, nano_sec = 318277
+4: Cuda time, nano_sec = 165477
+4: Speedup, times = 1.92338
+4: [       OK ] Cuda.SBABuildFullSystemSpeedUp (51 ms)
+4: [ RUN      ] Cuda.SBABuildFullSystemMethods
+4: [       OK ] Cuda.SBABuildFullSystemMethods (149 ms)
+4: [ RUN      ] Cuda.SBABuildFullSystem
+4: id = 392
+4: cpu = 
+4:     0.56234   0.0324969    0.293609
+4:   0.0324969    0.466178 -0.00478791
+4:    0.293609 -0.00478791    0.170118
+4: gpu = 
+4:  0.168065 0.0112625   0.10203
+4: 0.0112625  0.135015 0.0041019
+4:   0.10203 0.0041019 0.0620114
+4: /home/repos/cuVSLAM/libs/cuda_modules/test/sba_test.cpp:483: Failure
+4: Value of: fs_cpu.point_block[j].isApprox(fs_gpu.point_block[j], thresh)
+4:   Actual: false
+4: Expected: true
+4: 
+4: 
+4: [CUVSLAM_TEST_RETRY]	/home/repos/cuVSLAM/build/bin/cuda_modules_test --gtest_filter=Cuda.SBABuildFullSystem --gtest_random_seed=50667
+4: [  FAILED  ] Cuda.SBABuildFullSystem (7 ms)
+4: [ DISABLED ] Cuda.DISABLED_SBASolverSpeedUp
+4: [ RUN      ] Cuda.SBASolver
+4: [       OK ] Cuda.SBASolver (165 ms)
+4: [ RUN      ] Cuda.SBAEvaluateCostSpeedUp
+4: Basic time, nano_sec = 108558
+4: Cuda time, nano_sec = 15469
+4: Speedup, times = 7.01757
+4: [       OK ] Cuda.SBAEvaluateCostSpeedUp (16 ms)
+4: [ RUN      ] Cuda.SBAEvaluateCost
+4: /home/repos/cuVSLAM/libs/cuda_modules/test/sba_test.cpp:763: Failure
+4: Value of: std::abs(cpu_result_cost - gpu_result_cost) < thresh
+4:   Actual: false
+4: Expected: true
+4: 
+4: 
+4: [CUVSLAM_TEST_RETRY]	/home/repos/cuVSLAM/build/bin/cuda_modules_test --gtest_filter=Cuda.SBAEvaluateCost --gtest_random_seed=50667
+4: [  FAILED  ] Cuda.SBAEvaluateCost (8 ms)
+4: [ RUN      ] Cuda.SBAParameterUpdaterComputeUpdateSpeedUp
+4: Basic time, nano_sec = 9055424
+4: Cuda time, nano_sec = 574704
+4: Speedup, times = 15.7567
+4: [       OK ] Cuda.SBAParameterUpdaterComputeUpdateSpeedUp (997 ms)
+4: [ RUN      ] Cuda.SBAParameterUpdaterComputeUpdate
+4: [       OK ] Cuda.SBAParameterUpdaterComputeUpdate (151 ms)
+4: [ RUN      ] Cuda.SBAParameterUpdaterUpdateStateSpeedUp
+4: Basic time, nano_sec = 645874
+4: Cuda time, nano_sec = 17597
+4: Speedup, times = 36.7029
+4: [       OK ] Cuda.SBAParameterUpdaterUpdateStateSpeedUp (1013 ms)
+4: [ RUN      ] Cuda.SBAParameterUpdaterUpdateState
+4: [       OK ] Cuda.SBAParameterUpdaterUpdateState (160 ms)
+4: [ RUN      ] Cuda.SBAComputePredictedRelativeReductionSpeedUp
+4: Basic time, nano_sec = 2789462
+4: Cuda time, nano_sec = 454965
+4: Speedup, times = 6.13116
+4: [       OK ] Cuda.SBAComputePredictedRelativeReductionSpeedUp (19013 ms)
+4: [ RUN      ] Cuda.SBAComputePredictedRelativeReduction
+4: cpu :3.21974
+4: gpu :3.23158
+4: /home/repos/cuVSLAM/libs/cuda_modules/test/sba_test.cpp:1143: Failure
+4: Value of: std::abs(cpu_prediction - gpu_prediction) < thresh
+4:   Actual: false
+4: Expected: true
+4: 
+4: 
+4: [CUVSLAM_TEST_RETRY]	/home/repos/cuVSLAM/build/bin/cuda_modules_test --gtest_filter=Cuda.SBAComputePredictedRelativeReduction --gtest_random_seed=50667
+4: [  FAILED  ] Cuda.SBAComputePredictedRelativeReduction (4 ms)
+4: [ DISABLED ] Cuda.DISABLED_SBABuildReducedSystem
+4: [ DISABLED ] Cuda.DISABLED_STTracker
+4: [ DISABLED ] Cuda.DISABLED_STTrackerSpeedupFullmap
+4: [ DISABLED ] Cuda.DISABLED_STTrackerSpeedupPartialmap
+4: [----------] 35 tests from Cuda (30600 ms total)
+4: 
+4: [----------] Global test environment tear-down
+4: [==========] 35 tests from 1 test suite ran. (30600 ms total)
+4: [  PASSED  ] 32 tests.
+4: [  FAILED  ] 3 tests, listed below:
+4: [  FAILED  ] Cuda.SBABuildFullSystem
+4: [  FAILED  ] Cuda.SBAEvaluateCost
+4: [  FAILED  ] Cuda.SBAComputePredictedRelativeReduction
+4: 
+4:  3 FAILED TESTS
+4:   YOU HAVE 12 DISABLED TESTS
+4: 
+ 4/15 Test  #4: cuda_modules_test ................***Failed   30.79 sec
+test 5
+      Start  5: edex_test
+
+5: Test command: /home/repos/cuVSLAM/build/bin/edex_test
+5: Working Directory: /home/repos/cuVSLAM/build/libs/edex/test
+5: Test timeout computed to be: 600
+5: [==========] Running 6 tests from 1 test suite.
+5: [----------] Global test environment set-up.
+5: [----------] 6 tests from FileNameToolsTest
+5: [ RUN      ] FileNameToolsTest.StripExt
+5: [       OK ] FileNameToolsTest.StripExt (0 ms)
+5: [ RUN      ] FileNameToolsTest.GetFilePath
+5: [       OK ] FileNameToolsTest.GetFilePath (0 ms)
+5: [ RUN      ] FileNameToolsTest.SplitSequinceFileName
+5: [       OK ] FileNameToolsTest.SplitSequinceFileName (0 ms)
+5: [ RUN      ] FileNameToolsTest.ExtractFrameIdFromFileName
+5: [       OK ] FileNameToolsTest.ExtractFrameIdFromFileName (0 ms)
+5: [ RUN      ] FileNameToolsTest.ZeroPadFrameId
+5: [       OK ] FileNameToolsTest.ZeroPadFrameId (0 ms)
+5: [ RUN      ] FileNameToolsTest.ReplaceFrameIdInFileName
+5: [       OK ] FileNameToolsTest.ReplaceFrameIdInFileName (0 ms)
+5: [----------] 6 tests from FileNameToolsTest (0 ms total)
+5: 
+5: [----------] Global test environment tear-down
+5: [==========] 6 tests from 1 test suite ran. (0 ms total)
+5: [  PASSED  ] 6 tests.
+5: 
+5:   YOU HAVE 6 DISABLED TESTS
+5: 
+ 5/15 Test  #5: edex_test ........................   Passed    0.16 sec
+test 6
+      Start  6: epipolar_test
+
+6: Test command: /home/repos/cuVSLAM/build/bin/epipolar_test
+6: Working Directory: /home/repos/cuVSLAM/build/libs/epipolar/test
+6: Test timeout computed to be: 600
+6: [==========] Running 36 tests from 13 test suites.
+6: [----------] Global test environment set-up.
+6: [----------] 1 test from CameraPointsReconstructionIntegTest
+6: [ RUN      ] CameraPointsReconstructionIntegTest.ReconstructionTestPerfectData
+6: [       OK ] CameraPointsReconstructionIntegTest.ReconstructionTestPerfectData (3 ms)
+6: [----------] 1 test from CameraPointsReconstructionIntegTest (3 ms total)
+6: 
+6: [----------] 1 test from FundamentalRansacTest
+6: [ RUN      ] FundamentalRansacTest.VerifyRansacEpipolar
+6: [       OK ] FundamentalRansacTest.VerifyRansacEpipolar (0 ms)
+6: [----------] 1 test from FundamentalRansacTest (0 ms total)
+6: 
+6: [----------] 6 tests from FundamentalMatrixUtilsTest
+6: [ RUN      ] FundamentalMatrixUtilsTest.VerifyTranslationIsColinear
+6: [       OK ] FundamentalMatrixUtilsTest.VerifyTranslationIsColinear (0 ms)
+6: [ RUN      ] FundamentalMatrixUtilsTest.VerifyRotation
+6: [       OK ] FundamentalMatrixUtilsTest.VerifyRotation (0 ms)
+6: [ RUN      ] FundamentalMatrixUtilsTest.ComputeQuadraticResiduals
+6: [       OK ] FundamentalMatrixUtilsTest.ComputeQuadraticResiduals (0 ms)
+6: [ RUN      ] FundamentalMatrixUtilsTest.LastSingularValueSmall
+6: [       OK ] FundamentalMatrixUtilsTest.LastSingularValueSmall (0 ms)
+6: [ RUN      ] FundamentalMatrixUtilsTest.PlanarHomography
+6: [       OK ] FundamentalMatrixUtilsTest.PlanarHomography (0 ms)
+6: [ RUN      ] FundamentalMatrixUtilsTest.RotationHomography
+6: [       OK ] FundamentalMatrixUtilsTest.RotationHomography (0 ms)
+6: [----------] 6 tests from FundamentalMatrixUtilsTest (0 ms total)
+6: 
+6: [----------] 1 test from ComputeFundamental
+6: [ RUN      ] ComputeFundamental.CheckReturnCodeInvalidScale
+6: [       OK ] ComputeFundamental.CheckReturnCodeInvalidScale (0 ms)
+6: [----------] 1 test from ComputeFundamental (0 ms total)
+6: 
+6: [----------] 6 tests from ResectioningUtilsTest
+6: [ RUN      ] ResectioningUtilsTest.AlreadyConvergedExpMap
+6: [       OK ] ResectioningUtilsTest.AlreadyConvergedExpMap (0 ms)
+6: [ DISABLED ] ResectioningUtilsTest.DISABLED_CameraTranslatedExpMap
+6: [ RUN      ] ResectioningUtilsTest.ConstrainedCameraTranslatedExpMap
+6: [       OK ] ResectioningUtilsTest.ConstrainedCameraTranslatedExpMap (0 ms)
+6: [ RUN      ] ResectioningUtilsTest.CameraRotatedExpMap
+6: [       OK ] ResectioningUtilsTest.CameraRotatedExpMap (0 ms)
+6: [ RUN      ] ResectioningUtilsTest.CameraRotatedAndTranslatedExpMap
+6: [       OK ] ResectioningUtilsTest.CameraRotatedAndTranslatedExpMap (0 ms)
+6: [ RUN      ] ResectioningUtilsTest.CameraRotatedPointsFarAwayExpMap
+6: [       OK ] ResectioningUtilsTest.CameraRotatedPointsFarAwayExpMap (0 ms)
+6: [ RUN      ] ResectioningUtilsTest.StartWithWorldCoordinatesExpMap
+6: [       OK ] ResectioningUtilsTest.StartWithWorldCoordinatesExpMap (0 ms)
+6: [----------] 6 tests from ResectioningUtilsTest (1 ms total)
+6: 
+6: [----------] 1 test from OptimalScalarRansacTest
+6: [ RUN      ] OptimalScalarRansacTest.SimilarTriangle
+6: [       OK ] OptimalScalarRansacTest.SimilarTriangle (0 ms)
+6: [----------] 1 test from OptimalScalarRansacTest (0 ms total)
+6: 
+6: [----------] 3 tests from HomographyRansacTest
+6: [ RUN      ] HomographyRansacTest.HomographyRansacWithoutNoise
+6: [       OK ] HomographyRansacTest.HomographyRansacWithoutNoise (0 ms)
+6: [ RUN      ] HomographyRansacTest.HomographyRansacWithNoise
+6: [       OK ] HomographyRansacTest.HomographyRansacWithNoise (0 ms)
+6: [ RUN      ] HomographyRansacTest.HomographyRansacWithNoiseCountInliners
+6: [       OK ] HomographyRansacTest.HomographyRansacWithNoiseCountInliners (0 ms)
+6: [----------] 3 tests from HomographyRansacTest (0 ms total)
+6: 
+6: [----------] 2 tests from HomographyTest
+6: [ RUN      ] HomographyTest.VerifyRandomHomography
+6: [       OK ] HomographyTest.VerifyRandomHomography (0 ms)
+6: [ RUN      ] HomographyTest.VerifyPureCameraRotation
+6: [       OK ] HomographyTest.VerifyPureCameraRotation (0 ms)
+6: [----------] 2 tests from HomographyTest (0 ms total)
+6: 
+6: [----------] 1 test from DecomposeHomographyTest
+6: [ RUN      ] DecomposeHomographyTest.GeneralCase
+6: [       OK ] DecomposeHomographyTest.GeneralCase (0 ms)
+6: [----------] 1 test from DecomposeHomographyTest (0 ms total)
+6: 
+6: [----------] 1 test from DecomposeHomographyIntegTest
+6: [ RUN      ] DecomposeHomographyIntegTest.GeneralCaseAllSolutions
+6: [       OK ] DecomposeHomographyIntegTest.GeneralCaseAllSolutions (0 ms)
+6: [----------] 1 test from DecomposeHomographyIntegTest (0 ms total)
+6: 
+6: [----------] 5 tests from NormalizationTest
+6: [ RUN      ] NormalizationTest.CheckResultValidness
+6: [       OK ] NormalizationTest.CheckResultValidness (0 ms)
+6: [ RUN      ] NormalizationTest.CheckMeanValueIsZero
+6: [       OK ] NormalizationTest.CheckMeanValueIsZero (0 ms)
+6: [ RUN      ] NormalizationTest.CheckMeanScaleIsSqrt2
+6: [       OK ] NormalizationTest.CheckMeanScaleIsSqrt2 (0 ms)
+6: [ RUN      ] NormalizationTest.CheckNormalizationStability
+6: [       OK ] NormalizationTest.CheckNormalizationStability (0 ms)
+6: [ RUN      ] NormalizationTest.CheckNormalizationLimit
+6: [       OK ] NormalizationTest.CheckNormalizationLimit (0 ms)
+6: [----------] 5 tests from NormalizationTest (0 ms total)
+6: 
+6: [----------] 6 tests from CameraSelectionTest
+6: [ RUN      ] CameraSelectionTest.IntersectRaysInCameraSpace_HappyPath
+6: [       OK ] CameraSelectionTest.IntersectRaysInCameraSpace_HappyPath (0 ms)
+6: [ RUN      ] CameraSelectionTest.IntersectRaysInCameraSpace_InFrontOfBothCameras
+6: [       OK ] CameraSelectionTest.IntersectRaysInCameraSpace_InFrontOfBothCameras (0 ms)
+6: [ RUN      ] CameraSelectionTest.IntersectRaysInCameraSpace_BehindOneCamera
+6: [       OK ] CameraSelectionTest.IntersectRaysInCameraSpace_BehindOneCamera (0 ms)
+6: [ RUN      ] CameraSelectionTest.IntersectRaysInCameraSpace_BehindBothCameras
+6: [       OK ] CameraSelectionTest.IntersectRaysInCameraSpace_BehindBothCameras (0 ms)
+6: [ RUN      ] CameraSelectionTest.CountPointsInFrontOfCameras_AllPointInFrontOfCameras
+6: [       OK ] CameraSelectionTest.CountPointsInFrontOfCameras_AllPointInFrontOfCameras (0 ms)
+6: [ RUN      ] CameraSelectionTest.CountPointsInFrontOfCameras_MixedPointsInFrontAndBehindCameras
+6: [       OK ] CameraSelectionTest.CountPointsInFrontOfCameras_MixedPointsInFrontAndBehindCameras (0 ms)
+6: [----------] 6 tests from CameraSelectionTest (0 ms total)
+6: 
+6: [----------] 2 tests from Epipolar/TriangulationTest
+6: [ RUN      ] Epipolar/TriangulationTest.OptimalVsStandart/0
+6: [       OK ] Epipolar/TriangulationTest.OptimalVsStandart/0 (0 ms)
+6: [ RUN      ] Epipolar/TriangulationTest.OptimalVsStandart/1
+6: [       OK ] Epipolar/TriangulationTest.OptimalVsStandart/1 (0 ms)
+6: [ DISABLED ] Epipolar/TriangulationTest.DISABLED_OptimaHomographyVsStandart/0
+6: [ DISABLED ] Epipolar/TriangulationTest.DISABLED_OptimaHomographyVsStandart/1
+6: [----------] 2 tests from Epipolar/TriangulationTest (0 ms total)
+6: 
+6: [----------] Global test environment tear-down
+6: [==========] 36 tests from 13 test suites ran. (7 ms total)
+6: [  PASSED  ] 36 tests.
+6: 
+6:   YOU HAVE 6 DISABLED TESTS
+6: 
+6: ResectioningUtilsTest::CameraRotatedPointsFarAwayExpMap::rotDistanceNoise        = 5.02357e-05  [SD = 0            Max = 5.02357e-05  Min = 5.02357e-05  Samples = 1]
+6: ResectioningUtilsTest::CameraRotatedPointsFarAwayExpMap::rotDistance             = 3.12137e-05  [SD = 0            Max = 3.12137e-05  Min = 3.12137e-05  Samples = 1]
+6: ResectioningUtilsTest::CameraRotatedAndTranslatedExpMap::tranDistanceNoise       = 0.0108877    [SD = 0            Max = 0.0108877    Min = 0.0108877    Samples = 1]
+6: ResectioningUtilsTest::CameraRotatedAndTranslatedExpMap::rotDistanceNoise        = 0.0007622    [SD = 0            Max = 0.0007622    Min = 0.0007622    Samples = 1]
+6: ResectioningUtilsTest::CameraRotatedAndTranslatedExpMap::tranDistance            = 0.00477349   [SD = 0            Max = 0.00477349   Min = 0.00477349   Samples = 1]
+6: ResectioningUtilsTest::CameraRotatedAndTranslatedExpMap::rotDistance             = 0.000157418  [SD = 0            Max = 0.000157418  Min = 0.000157418  Samples = 1]
+6: ResectioningUtilsTest::CameraRotatedExpMap::rotDistanceNoise                     = 0.00181632   [SD = 0            Max = 0.00181632   Min = 0.00181632   Samples = 1]
+6: ResectioningUtilsTest::CameraRotatedExpMap::rotDistance                          = 0.00177774   [SD = 0            Max = 0.00177774   Min = 0.00177774   Samples = 1]
+6: ResectioningUtilsTest::ConstrainedCameraTranslatedExpMap::tranDistanceNoise      = 6.1814e-07   [SD = 0            Max = 6.1814e-07   Min = 6.1814e-07   Samples = 1]
+6: ResectioningUtilsTest::ConstrainedCameraTranslatedExpMap::rotDistanceNoise       = 0            [SD = 0            Max = 2.22507e-308 Min = 0            Samples = 1]
+6: ResectioningUtilsTest::ConstrainedCameraTranslatedExpMap::tranDistance           = 2.27956e-07  [SD = 0            Max = 2.27956e-07  Min = 2.27956e-07  Samples = 1]
+6: ResectioningUtilsTest::ConstrainedCameraTranslatedExpMap::rotDistance            = 0            [SD = 0            Max = 2.22507e-308 Min = 0            Samples = 1]
+6: ResectioningUtilsTest::AlreadyConvergedExpMap::tranDistanceNoise                 = 8.44933e-09  [SD = 0            Max = 8.44933e-09  Min = 8.44933e-09  Samples = 1]
+6: ResectioningUtilsTest::AlreadyConvergedExpMap::rotDistanceNoise                  = 3.6447e-07   [SD = 0            Max = 3.6447e-07   Min = 3.6447e-07   Samples = 1]
+6: ResectioningUtilsTest::AlreadyConvergedExpMap::tranDistance                      = 3.47844e-07  [SD = 0            Max = 3.47844e-07  Min = 3.47844e-07  Samples = 1]
+6: ResectioningUtilsTest::AlreadyConvergedExpMap::rotDistance                       = 6.70552e-08  [SD = 0            Max = 6.70552e-08  Min = 6.70552e-08  Samples = 1]
+ 6/15 Test  #6: epipolar_test ....................   Passed    0.18 sec
+test 7
+      Start  7: log_test
+
+7: Test command: /home/repos/cuVSLAM/build/bin/log_test
+7: Working Directory: /home/repos/cuVSLAM/build/libs/log/test
+7: Test timeout computed to be: 600
+7: [==========] Running 1 test from 1 test suite.
+7: [----------] Global test environment set-up.
+7: [----------] 1 test from LogTest
+7: [ RUN      ] LogTest.TestAll
+7: [       OK ] LogTest.TestAll (1000 ms)
+7: [----------] 1 test from LogTest (1000 ms total)
+7: 
+7: [----------] Global test environment tear-down
+7: [==========] 1 test from 1 test suite ran. (1000 ms total)
+7: [  PASSED  ] 1 test.
+ 7/15 Test  #7: log_test .........................   Passed    1.01 sec
+test 8
+      Start  8: cuvslam_math_test
+
+8: Test command: /home/repos/cuVSLAM/build/bin/cuvslam_math_test
+8: Working Directory: /home/repos/cuVSLAM/build/libs/math/test
+8: Test timeout computed to be: 600
+8: [==========] Running 9 tests from 5 test suites.
+8: [----------] Global test environment set-up.
+8: [----------] 1 test from RansacTest
+8: [ RUN      ] RansacTest.RansacLineTest
+8: [       OK ] RansacTest.RansacLineTest (0 ms)
+8: [----------] 1 test from RansacTest (0 ms total)
+8: 
+8: [----------] 5 tests from TwistTests
+8: [ RUN      ] TwistTests.RotTwist2RTAndBack
+8: [       OK ] TwistTests.RotTwist2RTAndBack (0 ms)
+8: [ RUN      ] TwistTests.RT2FullTwistAndBack
+8: [       OK ] TwistTests.RT2FullTwistAndBack (0 ms)
+8: [ RUN      ] TwistTests.SimplifiedCamPointDerivative
+8: [       OK ] TwistTests.SimplifiedCamPointDerivative (0 ms)
+8: [ RUN      ] TwistTests.SimplifiedPointDerivative
+8: [       OK ] TwistTests.SimplifiedPointDerivative (0 ms)
+8: [ RUN      ] TwistTests.SimplifiedCamDerivative
+8: [       OK ] TwistTests.SimplifiedCamDerivative (0 ms)
+8: [----------] 5 tests from TwistTests (0 ms total)
+8: 
+8: [----------] 1 test from TwistToQuaternionTest
+8: [ RUN      ] TwistToQuaternionTest.TwistToQuaternionTest
+8: m:  0.475374          0          0          0          0          0
+8:          0   0.475374          0          0          0          0
+8:          0          0   0.475374          0          0          0
+8:          0    1.00152          0          0          0          0
+8:          0          0          0   0.814398   0.322798   0.371307
+8:          0          0          0  -0.287556   0.925719  -0.149865
+8:          0          0          0  -0.399223 -0.0308093   0.883233
+8: twist:  0.13171
+8:  0.852429
+8: -0.675229
+8:  0.303138
+8:  0.430586
+8:  -1.10072
+8: q+t:0.0626115
+8:  0.405223
+8: -0.320986
+8:  0.853723
+8: -0.022838
+8:  0.476392
+8:  -1.10648
+8: [       OK ] TwistToQuaternionTest.TwistToQuaternionTest (0 ms)
+8: [----------] 1 test from TwistToQuaternionTest (0 ms total)
+8: 
+8: [----------] 1 test from TwistToAngleTest
+8: [ RUN      ] TwistToAngleTest.PoseCovToXYZRollPitchYawCovMatchesSigmaPointSamplingAtMultiplePoses
+8: [       OK ] TwistToAngleTest.PoseCovToXYZRollPitchYawCovMatchesSigmaPointSamplingAtMultiplePoses (0 ms)
+8: [----------] 1 test from TwistToAngleTest (0 ms total)
+8: 
+8: [----------] 1 test from PGO
+8: [ RUN      ] PGO.PGOTest
+8: [       OK ] PGO.PGOTest (76 ms)
+8: [ DISABLED ] PGO.DISABLED_PGOTestPlanar
+8: [----------] 1 test from PGO (76 ms total)
+8: 
+8: [----------] Global test environment tear-down
+8: [==========] 9 tests from 5 test suites ran. (77 ms total)
+8: [  PASSED  ] 9 tests.
+8: 
+8:   YOU HAVE 1 DISABLED TEST
+8: 
+ 8/15 Test  #8: cuvslam_math_test ................   Passed    0.09 sec
+test 9
+      Start  9: map_test
+
+9: Test command: /home/repos/cuVSLAM/build/bin/map_test
+9: Working Directory: /home/repos/cuVSLAM/build/libs/map/test
+9: Test timeout computed to be: 600
+9: [==========] Running 1 test from 1 test suite.
+9: [----------] Global test environment set-up.
+9: [----------] 1 test from Map
+9: [ RUN      ] Map.AddKeyframe
+9: [       OK ] Map.AddKeyframe (129 ms)
+9: [----------] 1 test from Map (129 ms total)
+9: 
+9: [----------] Global test environment tear-down
+9: [==========] 1 test from 1 test suite ran. (129 ms total)
+9: [  PASSED  ] 1 test.
+ 9/15 Test  #9: map_test .........................   Passed    0.29 sec
+test 10
+      Start 10: imu_test
+
+10: Test command: /home/repos/cuVSLAM/build/bin/imu_test
+10: Working Directory: /home/repos/cuVSLAM/build/libs/imu/test
+10: Test timeout computed to be: 600
+10: This test program does NOT link in any test case. Please make sure this is intended.
+10: [==========] Running 0 tests from 0 test suites.
+10: [==========] 0 tests from 0 test suites ran. (0 ms total)
+10: [  PASSED  ] 0 tests.
+10/15 Test #10: imu_test .........................   Passed    0.16 sec
+test 11
+      Start 11: pipelines_test
+
+11: Test command: /home/repos/cuVSLAM/build/bin/pipelines_test
+11: Working Directory: /home/repos/cuVSLAM/build/libs/pipelines/test
+11: Test timeout computed to be: 600
+11: [==========] Running 7 tests from 1 test suite.
+11: [----------] Global test environment set-up.
+11: [----------] 7 tests from StateMachineTest
+11: [ RUN      ] StateMachineTest.UninitializedToOkOnSuccessfulInit
+11: [       OK ] StateMachineTest.UninitializedToOkOnSuccessfulInit (0 ms)
+11: [ RUN      ] StateMachineTest.FailedCallbackKeepsTimelineAndStaysInitializing
+11: [       OK ] StateMachineTest.FailedCallbackKeepsTimelineAndStaysInitializing (0 ms)
+11: [ RUN      ] StateMachineTest.FrameFailedDuringInitClearsTimeline
+11: [       OK ] StateMachineTest.FrameFailedDuringInitClearsTimeline (0 ms)
+11: [ RUN      ] StateMachineTest.FrameFailedAfterOkKeepsTimelineAndState
+11: [       OK ] StateMachineTest.FrameFailedAfterOkKeepsTimelineAndState (0 ms)
+11: [ RUN      ] StateMachineTest.FrameDroppedTimeoutResetsToUninitialized
+11: [       OK ] StateMachineTest.FrameDroppedTimeoutResetsToUninitialized (0 ms)
+11: [ RUN      ] StateMachineTest.ResetEventDropsToUninitialized
+11: [       OK ] StateMachineTest.ResetEventDropsToUninitialized (0 ms)
+11: [ RUN      ] StateMachineTest.PeriodicGravityRefinementWhenOk
+11: [       OK ] StateMachineTest.PeriodicGravityRefinementWhenOk (0 ms)
+11: [----------] 7 tests from StateMachineTest (0 ms total)
+11: 
+11: [----------] Global test environment tear-down
+11: [==========] 7 tests from 1 test suite ran. (0 ms total)
+11: [  PASSED  ] 7 tests.
+11/15 Test #11: pipelines_test ...................   Passed    0.13 sec
+test 12
+      Start 12: slam_test
+
+12: Test command: /home/repos/cuVSLAM/build/bin/slam_test
+12: Working Directory: /home/repos/cuVSLAM/build/libs/slam/test
+12: Test timeout computed to be: 600
+12: [==========] Running 9 tests from 4 test suites.
+12: [----------] Global test environment set-up.
+12: [----------] 1 test from AsyncSlam
+12: [ RUN      ] AsyncSlam.TrackResultCanRunWhileLocalizeInMapIsInFlight
+12: [ERROR] [31mLMDB error: No such file or directory in Unknown table table[0m
+12: 
+12: [ERROR] Failed to open Slam Database /tmp/cuvslam_missing_localization_map_2233553070291398.
+12: 
+12: [       OK ] AsyncSlam.TrackResultCanRunWhileLocalizeInMapIsInFlight (3 ms)
+12: [----------] 1 test from AsyncSlam (3 ms total)
+12: 
+12: [----------] 4 tests from SlamTest
+12: [ RUN      ] SlamTest.PGO
+12: 0.000000, 80.639999[       OK ] SlamTest.PGO (0 ms)
+12: [ RUN      ] SlamTest.PnpRansac
+12: [       OK ] SlamTest.PnpRansac (0 ms)
+12: [ RUN      ] SlamTest.rigid_transform_3d
+12: r:
+12:  -0.049569   0.400857  -0.914799  0.0272725
+12:   0.367199  -0.844463  -0.389933 -0.0934896
+12:  -0.928821  -0.355241  -0.105335  -0.560875
+12:          0          0          0          1
+12: t:
+12: -0.0586141   0.399125  -0.915021   0.043063
+12:   0.355271  -0.848248  -0.392757 -0.0910753
+12:  -0.932924  -0.348101  -0.092078  -0.560054
+12:          0          0          0          1
+12: E:
+12:     0.999958   0.00165714  -0.00906178   -0.0207129
+12:  -0.00177217     0.999918   -0.0127058  -0.00946134
+12:   0.00903988    0.0127213     0.999878 -0.000120163
+12:            0            0            0            1
+12: d[       OK ] SlamTest.rigid_transform_3d (0 ms)
+12: [ RUN      ] SlamTest.thread_safe_queue
+12: [       OK ] SlamTest.thread_safe_queue (1 ms)
+12: [----------] 4 tests from SlamTest (1 ms total)
+12: 
+12: [----------] 1 test from Slam
+12: [ RUN      ] Slam.SlamTest
+12: [       OK ] Slam.SlamTest (39 ms)
+12: [----------] 1 test from Slam (39 ms total)
+12: 
+12: [----------] 3 tests from Tail
+12: [ RUN      ] Tail.RejectsSlamUpdatesOlderThanRetentionWindow
+12: [       OK ] Tail.RejectsSlamUpdatesOlderThanRetentionWindow (0 ms)
+12: [ RUN      ] Tail.AppliesRetainedPastUpdateToLaterTailPoses
+12: [       OK ] Tail.AppliesRetainedPastUpdateToLaterTailPoses (0 ms)
+12: [ RUN      ] Tail.ZeroRetentionKeepsOnlyTheLatestTimestampUsable
+12: [       OK ] Tail.ZeroRetentionKeepsOnlyTheLatestTimestampUsable (0 ms)
+12: [----------] 3 tests from Tail (0 ms total)
+12: 
+12: [----------] Global test environment tear-down
+12: [==========] 9 tests from 4 test suites ran. (44 ms total)
+12: [  PASSED  ] 9 tests.
+12/15 Test #12: slam_test ........................   Passed    0.20 sec
+test 13
+      Start 13: sof_test
+
+13: Test command: /home/repos/cuVSLAM/build/bin/sof_test
+13: Working Directory: /home/repos/cuVSLAM/build/libs/sof/test
+13: Test timeout computed to be: 600
+13: [==========] Running 19 tests from 6 test suites.
+13: [----------] Global test environment set-up.
+13: [----------] 1 test from ImageUtilsTest
+13: [ RUN      ] ImageUtilsTest.GaussianCoefficientsTest
+13: [       OK ] ImageUtilsTest.GaussianCoefficientsTest (0 ms)
+13: [----------] 1 test from ImageUtilsTest (0 ms total)
+13: 
+13: [----------] 1 test from ImagePyramid
+13: [ RUN      ] ImagePyramid.ComputePatchInterpolatesCorrectly
+13: [       OK ] ImagePyramid.ComputePatchInterpolatesCorrectly (14 ms)
+13: [----------] 1 test from ImagePyramid (14 ms total)
+13: 
+13: [----------] 2 tests from ImageTest
+13: [ RUN      ] ImageTest.GF2TGradientMapTest
+13: [       OK ] ImageTest.GF2TGradientMapTest (10 ms)
+13: [ RUN      ] ImageTest.Visual_GF2TFeatureDetectorTest
+13: [       OK ] ImageTest.Visual_GF2TFeatureDetectorTest (9 ms)
+13: [----------] 2 tests from ImageTest (19 ms total)
+13: 
+13: [----------] 5 tests from KFSelector
+13: [ RUN      ] KFSelector.DefaultAutomaticSelectionStillSelectsFirstFrameOnly
+13: [       OK ] KFSelector.DefaultAutomaticSelectionStillSelectsFirstFrameOnly (0 ms)
+13: [ RUN      ] KFSelector.ForcedKeyframeSkipsAutomaticChecks
+13: [       OK ] KFSelector.ForcedKeyframeSkipsAutomaticChecks (0 ms)
+13: [ RUN      ] KFSelector.ForcedNonKeyframeCanSkipFirstFrameSelection
+13: [       OK ] KFSelector.ForcedNonKeyframeCanSkipFirstFrameSelection (0 ms)
+13: [ RUN      ] KFSelector.ForcedNonKeyframeSkipsZeroSurvivorAndNextAutomaticFrameUsesPreviousKeyframe
+13: [       OK ] KFSelector.ForcedNonKeyframeSkipsZeroSurvivorAndNextAutomaticFrameUsesPreviousKeyframe (0 ms)
+13: [ RUN      ] KFSelector.ForcedNonKeyframeSkipsMaxTimeRule
+13: [       OK ] KFSelector.ForcedNonKeyframeSkipsMaxTimeRule (0 ms)
+13: [----------] 5 tests from KFSelector (0 ms total)
+13: 
+13: [----------] 6 tests from KLTTracker
+13: [ RUN      ] KLTTracker.ShiftNewLK
+13: 
+13: 
+13: Delta: (5, 5)
+13: adding gaussian noise with sigma = 1
+13: tracked:	51
+13: total:		100
+13: track_rate:	51%
+13: 	err <0.05:	62.7451%
+13: 	err <0.1:	84.3137%
+13: 	err <0.5:	100%
+13: 	err <2.f:	100%
+13: [       OK ] KLTTracker.ShiftNewLK (42 ms)
+13: [ RUN      ] KLTTracker.ShiftOldLK
+13: 
+13: 
+13: Delta: (5, 5)
+13: adding gaussian noise with sigma = 1
+13: tracked:	32
+13: total:		100
+13: track_rate:	32%
+13: 	err <0.05:	0%
+13: 	err <0.1:	3.125%
+13: 	err <0.5:	71.875%
+13: 	err <2.f:	96.875%
+13: [       OK ] KLTTracker.ShiftOldLK (39 ms)
+13: [ RUN      ] KLTTracker.StereoNewLK
+13: total 100 points
+13: tracked 60 points
+13: [       OK ] KLTTracker.StereoNewLK (28 ms)
+13: [ RUN      ] KLTTracker.StereoOldLK
+13: total 100 points
+13: tracked 74 points
+13: [       OK ] KLTTracker.StereoOldLK (27 ms)
+13: [ RUN      ] KLTTracker.SequenceNewLK
+13: [ERROR] Missing Environment variable: CUVSLAM_DATASETS
+13: [ERROR] Missing Environment variable: CUVSLAM_OUTPUT
+13: [ERROR] Can't load PNG file /kitti/01/01.0.0001.png
+13: [       OK ] KLTTracker.SequenceNewLK (0 ms)
+13: [ RUN      ] KLTTracker.SequenceOldLK
+13: [ERROR] Can't load PNG file /kitti/01/01.0.0001.png
+13: [       OK ] KLTTracker.SequenceOldLK (0 ms)
+13: [----------] 6 tests from KLTTracker (137 ms total)
+13: 
+13: [----------] 4 tests from STTracker
+13: [ RUN      ] STTracker.ShiftST2
+13: 
+13: 
+13: Delta: (5, 5)
+13: adding gaussian noise with sigma = 1
+13: tracked:	78
+13: total:		100
+13: track_rate:	78%
+13: 	err <0.05:	44.8718%
+13: 	err <0.1:	66.6667%
+13: 	err <0.5:	91.0256%
+13: 	err <2.f:	92.3077%
+13: [       OK ] STTracker.ShiftST2 (40 ms)
+13: [ RUN      ] STTracker.ShiftST6
+13: 
+13: 
+13: Delta: (5, 5)
+13: adding gaussian noise with sigma = 1
+13: tracked:	57
+13: total:		100
+13: track_rate:	57%
+13: 	err <0.05:	17.5439%
+13: 	err <0.1:	31.5789%
+13: 	err <0.5:	82.4561%
+13: 	err <2.f:	91.2281%
+13: [       OK ] STTracker.ShiftST6 (46 ms)
+13: [ RUN      ] STTracker.TrackRotatedImageShiftOnly
+13: [       OK ] STTracker.TrackRotatedImageShiftOnly (19 ms)
+13: [ RUN      ] STTracker.TrackRotatedImageFullMap
+13: [       OK ] STTracker.TrackRotatedImageFullMap (19 ms)
+13: [----------] 4 tests from STTracker (126 ms total)
+13: 
+13: [----------] Global test environment tear-down
+13: [==========] 19 tests from 6 test suites ran. (297 ms total)
+13: [  PASSED  ] 19 tests.
+13/15 Test #13: sof_test .........................   Passed    0.45 sec
+test 14
+      Start 14: utils_test
+
+14: Test command: /home/repos/cuVSLAM/build/bin/utils_test
+14: Working Directory: /home/repos/cuVSLAM/build/libs/utils/test
+14: Test timeout computed to be: 600
+14: [==========] Running 2 tests from 2 test suites.
+14: [----------] Global test environment set-up.
+14: [----------] 1 test from CuvslamYamlConfig
+14: [ RUN      ] CuvslamYamlConfig.LoadsPerFrameKeyframeOverrideInternals
+14: [       OK ] CuvslamYamlConfig.LoadsPerFrameKeyframeOverrideInternals (0 ms)
+14: [----------] 1 test from CuvslamYamlConfig (0 ms total)
+14: 
+14: [----------] 1 test from ImageTransformTestGetSRGB
+14: [ RUN      ] ImageTransformTestGetSRGB.GetSRGBTest
+14: [       OK ] ImageTransformTestGetSRGB.GetSRGBTest (350 ms)
+14: [----------] 1 test from ImageTransformTestGetSRGB (350 ms total)
+14: 
+14: [----------] Global test environment tear-down
+14: [==========] 2 tests from 2 test suites ran. (351 ms total)
+14: [  PASSED  ] 2 tests.
+14: 
+14:   YOU HAVE 2 DISABLED TESTS
+14: 
+14/15 Test #14: utils_test .......................   Passed    0.51 sec
+test 15
+      Start 15: odometry_test
+
+15: Test command: /home/repos/cuVSLAM/build/bin/odometry_test
+15: Working Directory: /home/repos/cuVSLAM/build/libs/odometry/test
+15: Test timeout computed to be: 600
+15: [==========] Running 2 tests from 2 test suites.
+15: [----------] Global test environment set-up.
+15: [----------] 1 test from IndentityStill
+15: [ RUN      ] IndentityStill.GroundIntegrator
+15: [       OK ] IndentityStill.GroundIntegrator (0 ms)
+15: [----------] 1 test from IndentityStill (0 ms total)
+15: 
+15: [----------] 1 test from MovingOnGround
+15: [ RUN      ] MovingOnGround.PostProcessing
+15: [       OK ] MovingOnGround.PostProcessing (0 ms)
+15: [----------] 1 test from MovingOnGround (0 ms total)
+15: 
+15: [----------] Global test environment tear-down
+15: [==========] 2 tests from 2 test suites ran. (0 ms total)
+15: [  PASSED  ] 2 tests.
+15/15 Test #15: odometry_test ....................   Passed    0.16 sec
+
+93% tests passed, 1 tests failed out of 15
+
+Total Test time (real) =  38.11 sec
+
+The following tests FAILED:
+	  4 - cuda_modules_test (Failed)
+Errors while running CTest
+Output from these tests are in: /home/repos/cuVSLAM/build/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.

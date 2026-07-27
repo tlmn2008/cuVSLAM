@@ -1,0 +1,30 @@
+{
+  "compile_status": "success",
+  "toolchain": {
+    "cuda_compiler": "/usr/local/corex/bin/clang++ (ivcore11)",
+    "cuda_compiler_id": "ILUVATAR",
+    "host_compiler": "clang/clang++",
+    "cuda_arch": "ivcore11",
+    "cpp_standard": "c++17",
+    "cuda_runtime_library": "Shared (CUDA::cudart)"
+  },
+  "configure_flags": [
+    "-DCMAKE_CUDA_COMPILER=/usr/local/corex/bin/clang++",
+    "-DCMAKE_CUDA_ARCHITECTURES=ivcore11",
+    "-DUSE_CUNLS=OFF",
+    "-DUSE_NVTX=OFF",
+    "-DUSE_RERUN=OFF",
+    "-DOpenCV_DIR=/usr/lib/x86_64-linux-gnu/cmake/opencv4",
+    "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+  ],
+  "objects_compiled": {
+    "cuda_device_objects_cu_o": 14,
+    "host_objects_cpp_o": 266
+  },
+  "artifacts": {
+    "libcuvslam_so": "build/bin/libcuvslam.so",
+    "libcuvslam_so_bytes": 14716624,
+    "test_binaries": 28
+  },
+  "notes": "全部 CUDA(.cu) 与 host(.cpp) 单元均以 CoreX clang++(ivcore11) 编译并成功链接为 libcuvslam.so 及 28 个测试二进制。cuNLS/cuDSS(NVIDIA 专有预编译，Multisensor 模式)通过 USE_CUNLS=OFF 关闭，属 terminal blocker。"
+}

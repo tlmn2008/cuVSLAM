@@ -93,6 +93,32 @@ if(CUVSLAM_CUDA_ARCH_ALL)
   add_compile_options($<$<COMPILE_LANGUAGE:CUDA>:-arch=all>)
 endif()
 
+# --- Iluvatar CoreX (ivcore11) adaptations -------------------------------------------------
+# Detect a CoreX clang++ CUDA compiler (passed via -DCMAKE_CUDA_COMPILER=/usr/local/corex/...).
+if(CMAKE_CUDA_COMPILER MATCHES "corex")
+  # ivcore11 has no texture hardware and its SDK texture_indirect_functions.h references an
+  # undeclared __nv_tex_surf_handler, so tex2D<>/cudaCreateTextureObject fail to compile.
+  # Shadow that SDK header with the software texture bridge by putting our copy earlier on the
+  # include search path (affects both host .cpp texture creation and device .cu sampling, which
+  # must use the same implementation). See corex_compat/texture_bridge/.
+  include_directories(BEFORE ${CMAKE_SOURCE_DIR}/corex_compat/texture_bridge)
+
+  # The prelude below force-includes <cuda_runtime.h> into every TU (incl. pure-host .cpp that
+  # otherwise never see the toolkit include dir), so make the CoreX headers findable everywhere.
+  include_directories(BEFORE /usr/local/corex/include)
+
+  # The SDK cuda_runtime.h does NOT pull in texture_indirect_functions.h, so a plain -I shadow is
+  # not enough: force-include a prelude (cuda_runtime.h + the bridge) into every cuVSLAM host and
+  # device TU so texture creation (host) and tex2D<> sampling (device) both use the bridge
+  # consistently. Placed after the FetchContent deps so it does not affect third-party targets.
+  add_compile_options(-include ${CMAKE_SOURCE_DIR}/corex_compat/texture_bridge/corex_prelude.h)
+
+  # ivcore11 clang silently ignores CMAKE_CUDA_STANDARD (no -std mapping), so .cu falls back to
+  # C++14 and ixthrust (<cub>/<thrust>) rejects the build ("requires C++17"). Force the standard.
+  set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -std=c++17")
+endif()
+# -------------------------------------------------------------------------------------------
+
 add_subdirectory(libs)
 add_subdirectory(tools)
 add_subdirectory(examples)

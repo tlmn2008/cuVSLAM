@@ -1,0 +1,986 @@
+[  0%] Built target profiler
+[  4%] Built target libjpeg_external
+[  4%] Built target png_genfiles
+[  4%] Updating version header
+[  4%] Built target lmdb_build
+[  5%] Built target gtest
+[  6%] Built target jsoncpp_static
+[ 11%] Built target zlibstatic
+[  7%] Built target gflags_static
+[ 15%] Built target zlib
+[ 17%] Built target spdlog
+[ 18%] Built target profiler_test
+[ 18%] Built target version_info
+[ 18%] Built target gtest_main
+[ 20%] Built target common
+[ 23%] Built target cuda_kernels
+[ 21%] Built target cnpy-static
+[ 33%] Built target yaml-cpp
+[ 35%] Built target png_static
+[ 36%] Built target log
+[ 36%] Built target testing
+[ 37%] Built target edex
+[ 38%] Built target utils
+[ 38%] Built target camera
+[ 39%] Built target cuvslam_math
+[ 40%] Built target log_test
+[ 41%] Built target check_externals
+[ 42%] Building CXX object tools/undistort/CMakeFiles/undistort.dir/main.cpp.o
+[ 44%] Built target camera_rig_edex
+[ 46%] Built target common_test
+[ 47%] Built target epipolar
+[ 48%] Built target cuvslam_math_test
+[ 52%] Built target cuda_modules
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:137:9: warning: 'cudaCreateChannelDesc' macro redefined [-Wmacro-redefined]
+  137 | #define cudaCreateChannelDesc __cor_CCD
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:3367:9: note: previous definition is here
+ 3367 | #define cudaCreateChannelDesc ixCreateChannelDesc
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:188:9: warning: 'cudaMallocArray' macro redefined [-Wmacro-redefined]
+  188 | #define cudaMallocArray __cor_MallocArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2076:9: note: previous definition is here
+ 2076 | #define cudaMallocArray ixMallocArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:198:9: warning: 'cudaFreeArray' macro redefined [-Wmacro-redefined]
+  198 | #define cudaFreeArray __cor_FreeArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1918:9: note: previous definition is here
+ 1918 | #define cudaFreeArray ixFreeArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:209:9: warning: 'cudaMemcpyToArray' macro redefined [-Wmacro-redefined]
+  209 | #define cudaMemcpyToArray __cor_MemcpyToArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2138:9: note: previous definition is here
+ 2138 | #define cudaMemcpyToArray ixMemcpyToArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:223:9: warning: 'cudaMemcpy2DToArray' macro redefined [-Wmacro-redefined]
+  223 | #define cudaMemcpy2DToArray __cor_Memcpy2DToArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2118:9: note: previous definition is here
+ 2118 | #define cudaMemcpy2DToArray ixMemcpy2DToArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:235:9: warning: 'cudaMemcpyFromArray' macro redefined [-Wmacro-redefined]
+  235 | #define cudaMemcpyFromArray __cor_MemcpyFromArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2130:9: note: previous definition is here
+ 2130 | #define cudaMemcpyFromArray ixMemcpyFromArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:319:9: warning: 'cudaCreateTextureObject' macro redefined [-Wmacro-redefined]
+  319 | #define cudaCreateTextureObject __cor_CreateTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1864:9: note: previous definition is here
+ 1864 | #define cudaCreateTextureObject ixCreateTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:326:9: warning: 'cudaDestroyTextureObject' macro redefined [-Wmacro-redefined]
+  326 | #define cudaDestroyTextureObject __cor_DestroyTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1869:9: note: previous definition is here
+ 1869 | #define cudaDestroyTextureObject ixDestroyTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:352:9: warning: 'cudaCreateSurfaceObject' macro redefined [-Wmacro-redefined]
+  352 | #define cudaCreateSurfaceObject __cor_CreateSurfaceObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1863:9: note: previous definition is here
+ 1863 | #define cudaCreateSurfaceObject ixCreateSurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:359:9: warning: 'cudaDestroySurfaceObject' macro redefined [-Wmacro-redefined]
+  359 | #define cudaDestroySurfaceObject __cor_DestroySurfaceObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1868:9: note: previous definition is here
+ 1868 | #define cudaDestroySurfaceObject ixDestroySurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:793:9: warning: 'cudaMalloc3DArray' macro redefined [-Wmacro-redefined]
+  793 | #define cudaMalloc3DArray __cor_Malloc3DArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2075:9: note: previous definition is here
+ 2075 | #define cudaMalloc3DArray ixMalloc3DArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:847:9: warning: 'cudaMemcpy3D' macro redefined [-Wmacro-redefined]
+  847 | #define cudaMemcpy3D __cor_Memcpy3D
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2120:9: note: previous definition is here
+ 2120 | #define cudaMemcpy3D ixMemcpy3D
+      |         ^
+[ 53%] Built target sba
+[ 54%] Built target pnp
+[ 57%] Built target imu
+[ 57%] Built target gravity_calc
+[ 64%] Built target sof
+[ 65%] Built target map
+[ 68%] Built target epipolar_test
+[ 74%] Built target slam
+[ 74%] Building CXX object libs/camera/test/CMakeFiles/camera_test.dir/camera_test.cpp.o
+[ 74%] Built target camera_rig_edex_test
+[ 75%] Built target utils_test
+[ 75%] Building CXX object libs/camera/test/CMakeFiles/camera_test.dir/camera_vs_opencv_test.cpp.o
+[ 76%] Building CXX object libs/camera/test/CMakeFiles/camera_test.dir/fid_test.cpp.o
+[ 77%] Built target map_test
+[ 78%] Built target edex_test
+[ 80%] Built target cuda_modules_test
+[ 81%] Built target sof_test
+[ 84%] Built target sfm_online_lite
+[ 84%] Built target map_extractor
+[ 87%] Built target pipelines
+[ 89%] Built target slam_test
+[ 90%] Built target pipelines_test
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:137:9: warning: 'cudaCreateChannelDesc' macro redefined [-Wmacro-redefined]
+  137 | #define cudaCreateChannelDesc __cor_CCD
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:3367:In file included from 9<built-in>:: 1note: :
+previous definition is hereIn file included from 
+/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+ /home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h3367: | 137#:d9e:f iwarning: n'cudaCreateChannelDesc' macro redefined [-Wmacro-redefined]e
+ cudaCreateChann  e137l | D#edsecf iinxeC rceuadtaeCCrheaantneeClhDaensnce
+l      D| e        ^s
+c __cor_CCD
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:3367:9: note: previous definition is here
+ 3367 | #define cudaCreateChannelDesc ixCreateChannelDesc
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:137:9: warning: 'cudaCreateChannelDesc' macro redefined [-Wmacro-redefined]
+  137 | #define cudaCreateChannelDesc __cor_CCD
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:3367:9: note: previous definition is here
+ 3367 | #define cudaCreatIn file included from e<built-in>C:h1a:
+nIn file included from n/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.he:l10D:
+e/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.hs:c188 :i9x:C rwarning: e'cudaMallocArray' macro redefined [-Wmacro-redefined]aIn file included from 
+t<built-in>e  :C1881h | :
+a#In file included from nd/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.hne:ef10li:
+Dn/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.hee:s 188cc:
+u9      d:| a         ^Mwarning: 
+a'cudaMallocArray' macro redefined [-Wmacro-redefined]l
+locArr  a188y |  #_d_ecfoirn_eM acluldoacMAarlrlaoyc
+A      r| r        ^a
+y /usr/local/corex/include/IX/mapping_cudart.h_:_2076c:o9r:_ Mnote: aprevious definition is herel
+loc A2076r | r#adye
+f      i| n        ^e
+ cu/usr/local/corex/include/IX/mapping_cudart.hd:a2076M:a9l:l onote: cprevious definition is hereA
+rra y2076  | i#xdMeaflilnoec AcrurdaayM
+a      l| l        ^o
+cArray ixMallocArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:198:9: warning: 'cudaFreeArray' macro redefined [-Wmacro-redefined]
+In file included from   <built-in>198: | 1#:
+dIn file included from e/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.hf:i10n:
+e/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h :c198u:d9a:F rwarning: e'cudaFreeArray' macro redefined [-Wmacro-redefined]e
+Arra  y198  | _#_dceofri_nFer eceuAdrarFarye
+e      A| r        ^r
+ay/usr/local/corex/include/IX/mapping_cudart.h :_1918_:c9o:r _note: Fprevious definition is herer
+eeA r1918r | a#yd
+e      f| i        ^n
+e /usr/local/corex/include/IX/mapping_cudart.hc:u1918d:a9F:r enote: eprevious definition is hereA
+rra y1918  | i#xdFerfeienAer rcauyd
+a      F| r        ^e
+eArray ixFreeArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:209:9: warning: 'cudaMemcpyToArray' macro redefined [-Wmacro-redefined]In file included from 
+<built-in>:1:
+  In file included from 209/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h | :#10d:
+e/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.hf:i209n:e9 :c uwarning: d'cudaMemcpyToArray' macro redefined [-Wmacro-redefined]a
+Memcp  y209T | o#Adrerfaiyn e_ _ccuodra_MMeemmccppyyTTooAArrrraayyIn file included from  
+<built-in>_      :_| 1c        ^:
+o
+In file included from r/usr/local/corex/include/IX/mapping_cudart.h/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h_::M213810e::
+m9/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.hc::p 188ynote: :Tprevious definition is here9o
+:A  rwarning: 2138r'cudaMallocArray' macro redefined [-Wmacro-redefined] | a
+#yd
+e        f| 188i        ^ | n
+#e/usr/local/corex/include/IX/mapping_cudart.hd :ec2138fu:id9na:eM  enote: cmprevious definition is hereuc
+dp ay2138MT | ao#lAdlreorfcaiAynr eri axcyMu ed_ma_cMcpeoymrTc_opMAyarTlrolaAoyrc
+rA      ar| yr        ^ a
+iyx
+M      e| m        ^c
+py/usr/local/corex/include/IX/mapping_cudart.hT:o2076A:r9r:a ynote: 
+previous definition is here      
+|         ^
+ 2076 | #define cudaMallocArray ixMallocArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:223:9: warning: 'cudaMemcpy2DToArray' macro redefined [-Wmacro-redefined]
+  223 | #define cudaMemcpy2DToArray __cor_Memcpy2DToArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.hIn file included from :<built-in>2118::19:
+:In file included from  /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.hnote: :previous definition is here10
+:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h :2118223 | :#9d:e fwarning: iIn file included from 'cudaMemcpy2DToArray' macro redefined [-Wmacro-redefined]n<built-in>
+e:   1c223:
+u | In file included from d#/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.had:Me10ef:
+mi/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.hcn:pe198y :2c9Du:Td oawarning: AM'cudaFreeArray' macro redefined [-Wmacro-redefined]re
+rmacy  p 198yi | 2x#DMdTeeomfAcirpnryea2 yDc Tu_od_AacrForrrae_yeM
+Ae      rm| rc        ^ap
+yy 2_D_TcooArr_rFarye
+e      A| r        ^r
+a/usr/local/corex/include/IX/mapping_cudart.hy:
+2118      :| 9        ^:
+ note: /usr/local/corex/include/IX/mapping_cudart.hprevious definition is here:
+1918: 92118: |  #note: dprevious definition is heree
+f i1918n | e# dceufdianIn file included from Me<built-in>e :mc1cu:
+pdIn file included from ya/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h2F:Dr10Te:
+oe/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.hAA:rr235rr:aa9yy:   iiwarning: xx'cudaMemcpyFromArray' macro redefined [-Wmacro-redefined]MF
+erm  ec235ep | Ay#r2drDeaTfyoi
+An      re| r         ^ac
+yu
+d      a| M        ^e
+mcpyFromArray __cor_MemcpyFromArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2130:9: note: previous definition is here
+ 2130 | #define cudaMemcpyFromArray ixMemcpyFromArray
+      |         ^
+In file included from In file included from <built-in><built-in>::11:
+:
+In file included from In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h::1010:
+:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h::235209::99::  warning: warning: 'cudaMemcpyFromArray' macro redefined [-Wmacro-redefined]'cudaMemcpyToArray' macro redefined [-Wmacro-redefined]
+
+    235209 |  | ##ddeeffiinnee  ccuuddaaMMeemmccppyyFTrooAmrArrarya y_ __c_ocro_rM_eMmecmpcypTyoFArrormaAyr
+r      a| y        ^
+
+      | /usr/local/corex/include/IX/mapping_cudart.h        ^:
+2138/usr/local/corex/include/IX/mapping_cudart.h::92130:: 9note: :previous definition is here 
+note: previous definition is here 
+2138 |  #2130d | e#fdienfei nceu dcauMdeamMcepmycTpoyAFrrroamyA rirxaMye micxpMyeTmocApryrFaryo
+m      A| r        ^r
+ay
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:223:9: warning: 'cudaMemcpy2DToArray' macro redefined [-Wmacro-redefined]
+  223 | #define cudaMemcpy2DToArray __cor_Memcpy2DToArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2118:9: note: previous definition is here
+ 2118 | #define cudaMemcpy2DToArray ixMemcpy2DToArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:235:9: warning: 'cudaMemcpyFromArray' macro redefined [-Wmacro-redefined]
+  235 | #define cudaMemcpyFromArray __cor_MemcpyFromArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2130:9: note: previous definition is here
+ 2130 | #define cudaMemcpyFromArray ixMemcpyFromArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:319:9: warning: 'cudaCreateTextureObject' macro redefined [-Wmacro-redefined]
+  319 | #define cudaCreateTextureObject __cor_CreateTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1864:9: note: previous definition is here
+ 1864 | #define cudaCreateTextureObject ixCreateTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:326:9: warning: 'cudaDestroyTextureObject' macro redefined [-Wmacro-redefined]
+  326 | #define cudaDestroyTextureObject __cor_DestroyTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1869:9: note: previous definition is here
+ 1869 | #define cudaDestroyTextureObject ixDestroyTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:319:9: warning: 'cudaCreateTextureObject' macro redefined [-Wmacro-redefined]
+  319 | #define cudaCreateTextureObject __cor_CreateTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1864:9: note: previous definition is here
+ 1864 | #define cudaCreateTextureObject ixCreateTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:326:9: warning: 'cudaDestroyTextureObject' macro redefined [-Wmacro-redefined]
+  326 | #define cudaDestroyTextureObjectIn file included from  <built-in>_:_1c:
+oIn file included from r/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h_:D10e:
+s/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.ht:r352o:y9T:e xwarning: t'cudaCreateSurfaceObject' macro redefined [-Wmacro-redefined]u
+reObj  e352c | t#
+d      e| f        ^i
+ne/usr/local/corex/include/IX/mapping_cudart.h :c1869u:d9a:C rnote: eprevious definition is herea
+teS u1869r | f#adceefOibnjee cctu d_a_Dceosrt_rCoryeTaetxetSuurrefOabcjeeOcbtj eicxtD
+e      s| t        ^r
+oy/usr/local/corex/include/IX/mapping_cudart.hT:e1863x:t9u:r enote: Oprevious definition is hereb
+jec t1863
+ |       #| d        ^e
+fIn file included from i<built-in>n:e1 :
+cIn file included from u/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.hd:a10C:
+r/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.he:a319t:e9S:u rwarning: f'cudaCreateTextureObject' macro redefined [-Wmacro-redefined]a
+ceObj  e319c | t# diexfCirneea tceuSduarCfraecaetOebTjeexcttu
+r      e| O        ^b
+ject __cor_CreateTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1864:9: note: previous definition is here
+ 1864 | #define cudaCreateTextureObject ixCreateTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:359:9: warning: 'cudaDestroySurfaceObject' macro redefined [-Wmacro-redefined]
+  359 | #define cudaDestroySurfaceObject __cor_DestroySurfaceObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1868:9: note: previous definition is here
+ 1868 | #define cudaDestroySurfaceObject ixDestroySurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:326:9: warning: 'cudaDestroyTextureObject' macro redefined [-Wmacro-redefined]
+  326 | In file included from #<built-in>d:e1f:
+iIn file included from n/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.he: 10c:
+u/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.hd:a352D:e9s:t rwarning: o'cudaCreateSurfaceObject' macro redefined [-Wmacro-redefined]y
+Textu  r352e | O#bdjeefcitn e_ _ccuodra_CDreesattreoSyuTrefxatcuerOebOjbejcetc t_
+_      c| o        ^r
+_/usr/local/corex/include/IX/mapping_cudart.hC:r1869e:a9t:e Snote: uprevious definition is herer
+fac e1869O | b#jdeecfti
+n      e|          ^c
+u/usr/local/corex/include/IX/mapping_cudart.hd:a1863D:e9s:t rnote: oprevious definition is herey
+Tex t1863u | r#edOebfjiencet  ciuxdDaeCsrteraotyeTSeuxrtfuarceeOObbjjeecctt
+       i| x        ^C
+reateSurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:793:9: warning: 'cudaMalloc3DArray' macro redefined [-Wmacro-redefined]
+  793 | #define cudaMalloc3DArray __corIn file included from _<built-in>M:a1l:
+lIn file included from o/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.hc:310D:
+A/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.hr:r359a:y9
+:       | warning:         ^'cudaDestroySurfaceObject' macro redefined [-Wmacro-redefined]
+
+/usr/local/corex/include/IX/mapping_cudart.h:2075  :3599 | :# dnote: eprevious definition is heref
+ine  2075c | u#ddaeDfeisnter ocyuSduarMfaalcleoOcb3jDeAcrtr a_y_ cioxrM_aDlelsotcr3oDyASrurrafya
+c      e| O        ^b
+ject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1868:9: note: previous definition is here
+ 1868 | #define cudaDestroySurfaceObject ixDestroySurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:352:9: warning: 'cudaCreateSurfaceObject' macro redefined [-Wmacro-redefined]
+  352 | #define cudaCreateSurfaceObject __cor_CreateSurfaceObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1863:9: note: previous definition is here
+ 1863 | #define cudaCreateSurfaceObject ixCreateSurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:359:9: warning: 'cudaDestroySurfaceObject' macro redefined [-Wmacro-redefined]
+  359 | #define cudaDestroySurfaceObject __cor_DestroySurfaceObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1868:9: note: previous definition is here
+ 1868 | #define cudaDestroySurfaceObject ixDestroySurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:793:9: warning: 'cudaMalloc3DArray' macro redefined [-Wmacro-redefined]
+  793 | #define cudaMalloc3DArray __cor_Malloc3DArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2075:9: note: previous definition is here
+ 2075 | #define cudaMalloc3DArray ixMalloc3DArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:847:9: warning: 'cudaMemcpy3D' macro redefined [-Wmacro-redefined]
+  847 | #define cudaMemcpy3D __cor_Memcpy3D
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2120:9: note: previous definition is here
+ 2120 | #define cudaMemcpy3D ixMemcpy3D
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:793:9: warning: 'cudaMalloc3DArray' macro redefined [-Wmacro-redefined]
+  793 | #define cudaMalloc3DArray __cor_Malloc3DArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2075:9: note: previous definition is here
+ 2075 | #define cudaMalloc3DArray ixMalloc3DArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:847:9: warning: 'cudaMemcpy3D' macro redefined [-Wmacro-redefined]
+  847 | #define cudaMemcpy3D __cor_Memcpy3D
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2120:9: note: previous definition is here
+ 2120 | #define cudaMemcpy3D ixMemcpy3D
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:847:9: warning: 'cudaMemcpy3D' macro redefined [-Wmacro-redefined]
+  847 | #define cudaMemcpy3D __cor_Memcpy3D
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2120:9: note: previous definition is here
+ 2120 | #define cudaMemcpy3D ixMemcpy3D
+      |         ^
+[ 92%] Built target odometry
+[ 92%] Built target imu_test
+[ 92%] Built target odometry_test
+[ 93%] Building CXX object tools/sof_visualizer/CMakeFiles/sof_visualizer.dir/main.cpp.o
+[ 93%] Building CXX object tools/selection_visualizer/CMakeFiles/selectionVisualizer.dir/main.cpp.o
+[ 94%] Building CXX object libs/cuvslam/CMakeFiles/cuvslam.dir/debug_dump.cpp.o
+[ 94%] Building CXX object libs/cuvslam/CMakeFiles/cuvslam.dir/version.cpp.o
+[ 96%] Built target launcher
+[ 96%] Built target tracker
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:137:9: warning: 'cudaCreateChannelDesc' macro redefined [-Wmacro-redefined]
+  137 | #define cudaCreateChannelDesc __cor_CCD
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:3367:9: note: previous definition is here
+ 3367 | #define cudaCreateChannelDesc ixCreateChannelDesc
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:188:9: warning: 'cudaMallocArray' macro redefined [-Wmacro-redefined]
+  188 | #define cudaMallocArray __cor_MallocArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2076:9: note: previous definition is here
+ 2076 | #define cudaMallocArray ixMallocArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:198:9: warning: 'cudaFreeArray' macro redefined [-Wmacro-redefined]
+  198 | #define cudaFreeArray __cor_FreeArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1918:9: note: previous definition is here
+ 1918 | #define cudaFreeArray ixFreeArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:209:9: warning: 'cudaMemcpyToArray' macro redefined [-Wmacro-redefined]
+  209 | #define cudaMemcpyToArray __cor_MemcpyToArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2138:9: note: previous definition is here
+ 2138 | #define cudaMemcpyToArray ixMemcpyToArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:223:9: warning: 'cudaMemcpy2DToArray' macro redefined [-Wmacro-redefined]
+  223 | #define cudaMemcpy2DToArray __cor_Memcpy2DToArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2118:9: note: previous definition is here
+ 2118 | #define cudaMemcpy2DToArray ixMemcpy2DToArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:235:9: warning: 'cudaMemcpyFromArray' macro redefined [-Wmacro-redefined]
+  235 | #define cudaMemcpyFromArray __cor_MemcpyFromArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2130:9: note: previous definition is here
+ 2130 | #define cudaMemcpyFromArray ixMemcpyFromArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:319:9: warning: 'cudaCreateTextureObject' macro redefined [-Wmacro-redefined]
+  319 | #define cudaCreateTextureObject __cor_CreateTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1864:9: note: previous definition is here
+ 1864 | #define cudaCreateTextureObject ixCreateTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:326:9: warning: 'cudaDestroyTextureObject' macro redefined [-Wmacro-redefined]
+  326 | #define cudaDestroyTextureObject __cor_DestroyTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1869:9: note: previous definition is here
+ 1869 | #define cudaDestroyTextureObject ixDestroyTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:352:9: warning: 'cudaCreateSurfaceObject' macro redefined [-Wmacro-redefined]
+  352 | #define cudaCreateSurfaceObject __cor_CreateSurfaceObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1863:9: note: previous definition is here
+ 1863 | #define cudaCreateSurfaceObject ixCreateSurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:359:9: warning: 'cudaDestroySurfaceObject' macro redefined [-Wmacro-redefined]
+  359 | #define cudaDestroySurfaceObject __cor_DestroySurfaceObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1868:9: note: previous definition is here
+ 1868 | #define cudaDestroySurfaceObject ixDestroySurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:793:9: warning: 'cudaMalloc3DArray' macro redefined [-Wmacro-redefined]
+  793 | #define cudaMalloc3DArray __cor_Malloc3DArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2075:9: note: previous definition is here
+ 2075 | #define cudaMalloc3DArray ixMalloc3DArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:847:9: warning: 'cudaMemcpy3D' macro redefined [-Wmacro-redefined]
+  847 | #define cudaMemcpy3D __cor_Memcpy3D
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2120:9: note: previous definition is here
+ 2120 | #define cudaMemcpy3D ixMemcpy3D
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:137:9: warning: 'cudaCreateChannelDesc' macro redefined [-Wmacro-redefined]
+  137 | #define cudaCreateChannelDesc __cor_CCD
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:3367:9: note: previous definition is here
+ 3367 | #define cudaCreateChannelDesc ixCreateChannelDesc
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:188:9: warning: 'cudaMallocArray' macro redefined [-Wmacro-redefined]
+  188 | #define cudaMallocArray __cor_MallocArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2076:9: note: previous definition is here
+ 2076 | #define cudaMallocArray ixMallocArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:198:9: warning: 'cudaFreeArray' macro redefined [-Wmacro-redefined]
+  198 | #define cudaFreeArray __cor_FreeArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1918:9: note: previous definition is here
+ 1918 | #define cudaFreeArray ixFreeArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:209:9: warning: 'cudaMemcpyToArray' macro redefined [-Wmacro-redefined]
+  209 | #define cudaMemcpyToArray __cor_MemcpyToArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2138:9: note: previous definition is here
+ 2138 | #define cudaMemcpyToArray ixMemcpyToArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:223:9: warning: 'cudaMemcpy2DToArray' macro redefined [-Wmacro-redefined]
+  223 | #define cudaMemcpy2DToArray __cor_Memcpy2DToArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2118:9: note: previous definition is here
+ 2118 | #define cudaMemcpy2DToArray ixMemcpy2DToArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:235:9: warning: 'cudaMemcpyFromArray' macro redefined [-Wmacro-redefined]
+  235 | #define cudaMemcpyFromArray __cor_MemcpyFromArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2130:9: note: previous definition is here
+ 2130 | #define cudaMemcpyFromArray ixMemcpyFromArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:319:9: warning: 'cudaCreateTextureObject' macro redefined [-Wmacro-redefined]
+  319 | #define cudaCreateTextureObject __cor_CreateTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1864:9: note: previous definition is here
+ 1864 | #define cudaCreateTextureObject ixCreateTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:326:9: warning: 'cudaDestroyTextureObject' macro redefined [-Wmacro-redefined]
+  326 | #define cudaDestroyTextureObject __cor_DestroyTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1869:9: note: previous definition is here
+ 1869 | #define cudaDestroyTextureObject ixDestroyTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:352:9: warning: 'cudaCreateSurfaceObject' macro redefined [-Wmacro-redefined]
+  352 | #define cudaCreateSurfaceObject __cor_CreateSurfaceObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1863:9: note: previous definition is here
+ 1863 | #define cudaCreateSurfaceObject ixCreateSurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:359:9: warning: 'cudaDestroySurfaceObject' macro redefined [-Wmacro-redefined]
+  359 | #define cudaDestroySurfaceObject __cor_DestroySurfaceObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1868:9: note: previous definition is here
+ 1868 | #define cudaDestroySurfaceObject ixDestroySurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:793:9: warning: 'cudaMalloc3DArray' macro redefined [-Wmacro-redefined]
+  793 | #define cudaMalloc3DArray __cor_Malloc3DArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2075:9: note: previous definition is here
+ 2075 | #define cudaMalloc3DArray ixMalloc3DArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:137:9: warning: 'cudaCreateChannelDesc' macro redefined [-Wmacro-redefined]
+  137 | #define cudaCreateChannelDesc __cor_CCD
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:3367:9: note: previous definition is here
+ 3367 | #define cudaCreateChannelDesc ixCreateChannelDesc
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:137:9: warning: 'cudaCreateChannelDesc' macro redefined [-Wmacro-redefined]
+  137 | #define cudaCreIn file included from a<built-in>t:e1C:
+hIn file included from a/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.hn:n10e:
+l/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.hD:e847s:c9 :_ _warning: c'cudaMemcpy3D' macro redefined [-Wmacro-redefined]o
+r_CC  D847
+ |       #| d        ^e
+fin/usr/local/corex/include/IX/mapping_cudart.he: 3367c:u9d:a Mnote: eprevious definition is herem
+cIn file included from p <built-in>y3367:3 | 1D#:
+ dIn file included from _e/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h_f:ci10on:
+re/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h_ :Mc188eu:md9ca:pC yrwarning: 3e'cudaMallocArray' macro redefined [-Wmacro-redefined]Da
+
+t      e  | C188        ^h | 
+a#n/usr/local/corex/include/IX/mapping_cudart.hdn:ee2120fl:iD9ne:es  cnote: c previous definition is hereui
+dxa CM2120ra | el#aldtoeecfCAihrnarena nyce ul_dD_aecMsoecrm
+_c      Mp| ay        ^l3
+lDo ciAxrMreamyc
+p      y| 3        ^D
+
+      /usr/local/corex/include/IX/mapping_cudart.h| :        ^2076
+:9: note: previous definition is here
+ 2076 | #define cudaMallocArray ixMallocArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:198:9: warning: 'cudaFreeArray' macro redefined [-Wmacro-redefined]
+  198 | #define cudaFreeArray __cor_FreeArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1918:9: note: previous definition is here
+ 1918 | #define cudaFreeArray ixFreeArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:209:9: warning: 'cudaMemcpyToArray' macro redefined [-Wmacro-redefined]
+  209 | #define cudaMemcpyToArray __cor_MemcpyToArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2138:9: note: previous definition is here
+ 2138 | #define cudaMemcpyToArray ixMemcpyToArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:188:9: warning: 'cudaMallocArray' macro redefined [-Wmacro-redefined]
+  188 | #define cudaMallocArray __cor_MallocArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2076:9: note: previous definition is here
+ 2076 | #dIn file included from e<built-in>f:i1n:
+eIn file included from  /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.hc:u10d:
+a/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.hM:a223l:l9o:c Awarning: r'cudaMemcpy2DToArray' macro redefined [-Wmacro-redefined]r
+ay i  x223M | a#ldleofciAnrer acyu
+d      a| M        ^e
+mcpy2DToArray __cor_Memcpy2DToArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2118:9: note: previous definition is here
+ 2118 | #define cudaMemcpy2DToArray ixMemcpy2DToArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:198:9: warning: 'cudaFreeArray' macro redefined [-Wmacro-redefined]
+  198 | #define cudaFreeArray __cor_FreeArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1918:9: note: previous definition is here
+ 1918 | In file included from #<built-in>d:e1f:
+iIn file included from n/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.he: 10c:
+u/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.hd:a235F:r9e:e Awarning: r'cudaMemcpyFromArray' macro redefined [-Wmacro-redefined]r
+ay i  x235F | r#edeeAfrirnaey 
+c      u| d        ^a
+MemcpyFromArray __cor_MemcpyFromArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2130:9: note: previous definition is here
+ 2130 | #define cudaMemcpyFromArray ixMemcpyFromArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:209:9: warning: 'cudaMemcpyToArray' macro redefined [-Wmacro-redefined]
+  209 | #define cudaMemcpyToArray __cor_MemcpyToArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2138:9: note: previous definition is here
+ 2138 | #define cudaMemcpyToArray ixMemcpyToArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:223:9: warning: 'cudaMemcpy2DToArray' macro redefined [-Wmacro-redefined]
+  223 | #define cudaMemcpy2DToArray __cor_Memcpy2DToArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2118:9: note: previous definition is here
+ 2118 | #define cudaMemcpy2DToArray ixMemcpy2DToArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:235:9: warning: 'cudaMemcpyFromArray' macro redefined [-Wmacro-redefined]
+  235 | #define cudaMemcpyFromArray __cor_MemcpyFromArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2130:9: note: previous definition is here
+ 2130 | #define cudaMemcpyFromArray ixMemcpyFromArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:319:9: warning: 'cudaCreateTextureObject' macro redefined [-Wmacro-redefined]
+  319 | #define cudaCreateTextureObject __cor_CreateTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1864:9: note: previous definition is here
+ 1864 | #define cudaCreateTextureObject ixCreateTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:326:9: warning: 'cudaDestroyTextureObject' macro redefined [-Wmacro-redefined]
+  326 | #define cudaDestroyTextureObject __cor_DestroyTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1869:9: note: previous definition is here
+ 1869 | #define cudaDestroyTextureObject ixDestroyTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:319:9: warning: 'cudaCreateTextureObject' macro redefined [-Wmacro-redefined]
+  319 | #define cudaCreateTextureObject __cor_CreateTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1864:9: note: previous definition is here
+ 1864 | #define cudaCreateTextureObject ixCreateTextureObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:352:9: warning: 'cudaCreateSurfaceObject' macro redefined [-Wmacro-redefined]
+  352 | #define cudaCreateSurfaceObject __cor_CreateSurfaceObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1863:9: note: previous definition is here
+ 1863 | #define cudaCreateSurfaceObject ixCreateSurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:326:9: warning: 'cudaDestroyTextureObject' macro redefined [-Wmacro-redefined]
+  326 | #define cudaDestroyTextureObject __cor_DestroyTextureObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1869:9: note: previous definition is here
+ 1869 | #define cudaDestroIn file included from y<built-in>T:e1x:
+tIn file included from u/home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.hr:e10O:
+b/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.hj:e359c:t9 :i xwarning: D'cudaDestroySurfaceObject' macro redefined [-Wmacro-redefined]e
+stroy  T359e | x#tduerfeiOnbej eccutd
+a      D| e        ^s
+troySurfaceObject __cor_DestroySurfaceObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1868:9: note: previous definition is here
+ 1868 | #define cudaDestroySurfaceObject ixDestroySurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:352:9: warning: 'cudaCreateSurfaceObject' macro redefined [-Wmacro-redefined]
+  352 | #define cudaCreateSurfaceObject __cor_CreateSurfaceObject
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:1863:9: note: previous definition is here
+ 1863 | #define cudaCreateSurfaceObject ixCreateSurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:793:9: warning: 'cudaMalloc3DArray' macro redefined [-Wmacro-redefined]In file included from 
+<built-in>:1:
+In file included from   /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h793: | 10#:
+d/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.he:f359i:n9e:  cwarning: u'cudaDestroySurfaceObject' macro redefined [-Wmacro-redefined]d
+aMall  o359c | 3#DdAerfrianye  _c_ucdoarD_eMsatlrlooycS3uDrAfrarcaeyO
+b      j| e        ^c
+t _/usr/local/corex/include/IX/mapping_cudart.h_:c2075o:r9_:D enote: sprevious definition is heret
+roy S2075u | r#fdaecfeiOnbej eccutd
+a      M| a        ^l
+lo/usr/local/corex/include/IX/mapping_cudart.hc:31868D:A9r:r anote: yprevious definition is here 
+ixM a1868l | l#odce3fDiAnrer acyu
+d      a| D        ^e
+stroySurfaceObject ixDestroySurfaceObject
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:793:9: warning: 'cudaMalloc3DArray' macro redefined [-Wmacro-redefined]
+  793 | #define cudaMalloc3DArray __cor_Malloc3DArray
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2075:9: note: previous definition is here
+ 2075 | #define cudaMalloc3DArray ixMalloc3DArray
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:847:9: warning: 'cudaMemcpy3D' macro redefined [-Wmacro-redefined]
+  847 | #define cudaMemcpy3D __cor_Memcpy3D
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2120:9: note: previous definition is here
+ 2120 | #define cudaMemcpy3D ixMemcpy3D
+      |         ^
+In file included from <built-in>:1:
+In file included from /home/repos/cuVSLAM/corex_compat/texture_bridge/corex_prelude.h:10:
+/home/repos/cuVSLAM/corex_compat/texture_bridge/texture_indirect_functions.h:847:9: warning: 'cudaMemcpy3D' macro redefined [-Wmacro-redefined]
+  847 | #define cudaMemcpy3D __cor_Memcpy3D
+      |         ^
+/usr/local/corex/include/IX/mapping_cudart.h:2120:9: note: previous definition is here
+ 2120 | #define cudaMemcpy3D ixMemcpy3D
+      |         ^
+12 warnings generated.
+/home/repos/cuVSLAM/libs/camera/test/fid_test.cpp:143:24: warning: captured structured bindings are a C++20 extension [-Wc++20-extensions]
+  143 |       return std::find(prim_cams.begin(), prim_cams.end(), cam.id) == prim_cams.end();
+      |                        ^
+/home/repos/cuVSLAM/libs/camera/test/fid_test.cpp:136:33: note: 'prim_cams' declared here
+  136 |   for (const auto& [sec_cam_id, prim_cams] : primary_from_secondary) {
+      |                                 ^
+12 warnings generated.
+12 warnings generated.
+[ 96%] Linking CXX executable ../../bin/undistort
+12 warnings generated.
+[ 96%] Built target undistort
+12 warnings generated.
+[ 96%] Linking CXX shared library ../../bin/libcuvslam.so
+[ 96%] Built target cuvslam
+[ 96%] Linking CXX executable ../../../bin/track_euroc
+[ 97%] Linking CXX executable ../../bin/euroc_test
+[ 97%] Linking CXX executable ../../bin/cuvslam_api_launcher
+[ 98%] Linking CXX executable ../../bin/cuvslam_api_test
+[ 99%] Built target track_euroc
+[ 99%] Built target euroc_test
+[ 99%] Built target cuvslam_api_test
+[100%] Built target cuvslam_api_launcher
+In file included from /home/repos/cuVSLAM/tools/selection_visualizer/main.cpp:34:
+/home/repos/cuVSLAM/libs/utils/image_transform.h:66:52: warning: 'ptr_fun<float, float>' is deprecated: use 'std::function' instead [-Wdeprecated-declarations]
+   66 |     const auto& logArray = linArray.unaryExpr(std::ptr_fun(LINtoSRGB)).array() * _PixelType(255.0f);
+      |                                                    ^
+/home/repos/cuVSLAM/libs/utils/image_transform.h:74:70: note: in instantiation of member function 'cuvslam::utils::_ImageTransform<float, cuvslam::utils::ImageTransformType::getSRGB, 2, 255, 0, 255>::LinearToLog' requested here
+   74 |     return (_Type == ImageTransformType::getSRGB) ? getSRGB(image) : LinearToLog(image);
+      |                                                                      ^
+/home/repos/cuVSLAM/tools/selection_visualizer/main.cpp:47:39: note: in instantiation of member function 'cuvslam::utils::_ImageTransform<float, cuvslam::utils::ImageTransformType::getSRGB, 2, 255, 0, 255>::Apply' requested here
+   47 |   mat = utils::ImageTransform<float>::Apply(mat);
+      |                                       ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_function.h:1124:5: note: 'ptr_fun<float, float>' has been explicitly marked deprecated here
+ 1124 |     _GLIBCXX11_DEPRECATED_SUGGEST("std::function")
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h:106:45: note: expanded from macro '_GLIBCXX11_DEPRECATED_SUGGEST'
+  106 | # define _GLIBCXX11_DEPRECATED_SUGGEST(ALT) _GLIBCXX_DEPRECATED_SUGGEST(ALT)
+      |                                             ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h:98:19: note: expanded from macro '_GLIBCXX_DEPRECATED_SUGGEST'
+   98 |   __attribute__ ((__deprecated__ ("use '" ALT "' instead")))
+      |                   ^
+13 warnings generated.
+[100%] Linking CXX executable ../../../bin/camera_test
+[100%] Built target camera_test
+13 warnings generated.
+[100%] Linking CXX executable ../../bin/selectionVisualizer
+[100%] Built target selectionVisualizer
+In file included from /home/repos/cuVSLAM/tools/sof_visualizer/main.cpp:18:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/algorithm:61:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h:69:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tempbuf.h:61:
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h:151:7: warning: destructor called on non-final 'cuvslam::SteadyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' that has virtual functions but non-virtual destructor [-Wdelete-non-abstract-non-virtual-dtor]
+  151 |       __pointer->~_Tp();
+      |       ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:675:9: note: in instantiation of function template specialization 'std::_Destroy<cuvslam::SteadyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>' requested here
+  675 |         { std::_Destroy(__p); }
+      |                ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h:613:28: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<void>>::destroy<cuvslam::SteadyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>' requested here
+  613 |         allocator_traits<_Alloc>::destroy(_M_impl._M_alloc(), _M_ptr());
+      |                                   ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h:599:2: note: in instantiation of member function 'std::_Sp_counted_ptr_inplace<cuvslam::SteadyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>, std::allocator<void>, __gnu_cxx::_S_atomic>::_M_dispose' requested here
+  599 |         _Sp_counted_ptr_inplace(_Alloc __a, _Args&&... __args)
+      |         ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h:972:6: note: in instantiation of function template specialization 'std::_Sp_counted_ptr_inplace<cuvslam::SteadyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>, std::allocator<void>, __gnu_cxx::_S_atomic>::_Sp_counted_ptr_inplace<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+  972 |             _Sp_cp_type(__a._M_a, std::forward<_Args>(__args)...);
+      |             ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h:1712:14: note: in instantiation of function template specialization 'std::__shared_count<>::__shared_count<cuvslam::SteadyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>, std::allocator<void>, std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+ 1712 |         : _M_ptr(), _M_refcount(_M_ptr, __tag, std::forward<_Args>(__args)...)
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h:464:4: note: in instantiation of function template specialization 'std::__shared_ptr<cuvslam::SteadyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>::__shared_ptr<std::allocator<void>, std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+  464 |         : __shared_ptr<_Tp>(__tag, std::forward<_Args>(__args)...)
+      |           ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h:1009:14: note: in instantiation of function template specialization 'std::shared_ptr<cuvslam::SteadyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>::shared_ptr<std::allocator<void>, std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+ 1009 |       return shared_ptr<_Tp>(_Sp_alloc_shared_tag<_Alloc>{__a},
+      |              ^
+/home/repos/cuVSLAM/libs/common/image_dropper.h:136:19: note: in instantiation of function template specialization 'std::make_shared<cuvslam::SteadyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>, std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+  136 |       return std::make_shared<SteadyImageDropper<URNG>>(std::forward<URNG>(gen));
+      |                   ^
+/home/repos/cuVSLAM/tools/sof_visualizer/main.cpp:199:15: note: in instantiation of function template specialization 'cuvslam::CreateImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+  199 |   auto drop = CreateImageDropper(ParseImageDropperType(FLAGS_image_drop_type), std::mt19937{dev()});
+      |               ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h:151:19: note: qualify call to silence this warning
+  151 |       __pointer->~_Tp();
+      |                   ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h:151:7: warning: destructor called on non-final 'cuvslam::NormalImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' that has virtual functions but non-virtual destructor [-Wdelete-non-abstract-non-virtual-dtor]
+  151 |       __pointer->~_Tp();
+      |       ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:675:9: note: in instantiation of function template specialization 'std::_Destroy<cuvslam::NormalImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>' requested here
+  675 |         { std::_Destroy(__p); }
+      |                ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h:613:28: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<void>>::destroy<cuvslam::NormalImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>' requested here
+  613 |         allocator_traits<_Alloc>::destroy(_M_impl._M_alloc(), _M_ptr());
+      |                                   ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h:599:2: note: in instantiation of member function 'std::_Sp_counted_ptr_inplace<cuvslam::NormalImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>, std::allocator<void>, __gnu_cxx::_S_atomic>::_M_dispose' requested here
+  599 |         _Sp_counted_ptr_inplace(_Alloc __a, _Args&&... __args)
+      |         ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h:972:6: note: in instantiation of function template specialization 'std::_Sp_counted_ptr_inplace<cuvslam::NormalImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>, std::allocator<void>, __gnu_cxx::_S_atomic>::_Sp_counted_ptr_inplace<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+  972 |             _Sp_cp_type(__a._M_a, std::forward<_Args>(__args)...);
+      |             ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h:1712:14: note: in instantiation of function template specialization 'std::__shared_count<>::__shared_count<cuvslam::NormalImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>, std::allocator<void>, std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+ 1712 |         : _M_ptr(), _M_refcount(_M_ptr, __tag, std::forward<_Args>(__args)...)
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h:464:4: note: in instantiation of function template specialization 'std::__shared_ptr<cuvslam::NormalImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>::__shared_ptr<std::allocator<void>, std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+  464 |         : __shared_ptr<_Tp>(__tag, std::forward<_Args>(__args)...)
+      |           ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h:1009:14: note: in instantiation of function template specialization 'std::shared_ptr<cuvslam::NormalImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>::shared_ptr<std::allocator<void>, std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+ 1009 |       return shared_ptr<_Tp>(_Sp_alloc_shared_tag<_Alloc>{__a},
+      |              ^
+/home/repos/cuVSLAM/libs/common/image_dropper.h:138:19: note: in instantiation of function template specialization 'std::make_shared<cuvslam::NormalImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>, std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+  138 |       return std::make_shared<NormalImageDropper<URNG>>(std::forward<URNG>(gen));
+      |                   ^
+/home/repos/cuVSLAM/tools/sof_visualizer/main.cpp:199:15: note: in instantiation of function template specialization 'cuvslam::CreateImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+  199 |   auto drop = CreateImageDropper(ParseImageDropperType(FLAGS_image_drop_type), std::mt19937{dev()});
+      |               ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h:151:19: note: qualify call to silence this warning
+  151 |       __pointer->~_Tp();
+      |                   ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h:151:7: warning: destructor called on non-final 'cuvslam::StickyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' that has virtual functions but non-virtual destructor [-Wdelete-non-abstract-non-virtual-dtor]
+  151 |       __pointer->~_Tp();
+      |       ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:675:9: note: in instantiation of function template specialization 'std::_Destroy<cuvslam::StickyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>' requested here
+  675 |         { std::_Destroy(__p); }
+      |                ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h:613:28: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<void>>::destroy<cuvslam::StickyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>' requested here
+  613 |         allocator_traits<_Alloc>::destroy(_M_impl._M_alloc(), _M_ptr());
+      |                                   ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h:599:2: note: in instantiation of member function 'std::_Sp_counted_ptr_inplace<cuvslam::StickyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>, std::allocator<void>, __gnu_cxx::_S_atomic>::_M_dispose' requested here
+  599 |         _Sp_counted_ptr_inplace(_Alloc __a, _Args&&... __args)
+      |         ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h:972:6: note: in instantiation of function template specialization 'std::_Sp_counted_ptr_inplace<cuvslam::StickyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>, std::allocator<void>, __gnu_cxx::_S_atomic>::_Sp_counted_ptr_inplace<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+  972 |             _Sp_cp_type(__a._M_a, std::forward<_Args>(__args)...);
+      |             ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h:1712:14: note: in instantiation of function template specialization 'std::__shared_count<>::__shared_count<cuvslam::StickyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>, std::allocator<void>, std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+ 1712 |         : _M_ptr(), _M_refcount(_M_ptr, __tag, std::forward<_Args>(__args)...)
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h:464:4: note: in instantiation of function template specialization 'std::__shared_ptr<cuvslam::StickyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>::__shared_ptr<std::allocator<void>, std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+  464 |         : __shared_ptr<_Tp>(__tag, std::forward<_Args>(__args)...)
+      |           ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h:1009:14: note: in instantiation of function template specialization 'std::shared_ptr<cuvslam::StickyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>::shared_ptr<std::allocator<void>, std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+ 1009 |       return shared_ptr<_Tp>(_Sp_alloc_shared_tag<_Alloc>{__a},
+      |              ^
+/home/repos/cuVSLAM/libs/common/image_dropper.h:140:19: note: in instantiation of function template specialization 'std::make_shared<cuvslam::StickyImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>, std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+  140 |       return std::make_shared<StickyImageDropper<URNG>>(std::forward<URNG>(gen));
+      |                   ^
+/home/repos/cuVSLAM/tools/sof_visualizer/main.cpp:199:15: note: in instantiation of function template specialization 'cuvslam::CreateImageDropper<std::mersenne_twister_engine<unsigned long, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+  199 |   auto drop = CreateImageDropper(ParseImageDropperType(FLAGS_image_drop_type), std::mt19937{dev()});
+      |               ^
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h:151:19: note: qualify call to silence this warning
+  151 |       __pointer->~_Tp();
+      |                   ^
+15 warnings generated.
+[100%] Linking CXX executable ../../bin/sof_visualizer
+[100%] Built target sof_visualizer

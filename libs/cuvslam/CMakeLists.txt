@@ -87,10 +87,19 @@ set_target_properties(cuvslam PROPERTIES
 )
 
 if(USE_CUDA)
-    set_target_properties(cuvslam PROPERTIES
-        CUDA_RESOLVE_DEVICE_SYMBOLS ON
-        CUDA_SEPARABLE_COMPILATION ON
-    )
+    # CoreX/ivcore11: disable device-symbol resolution / separable compilation — the -dlink step
+    # fails on this toolchain (see cuda-separable-compilation-shared-pic). Kernels are self-contained.
+    if(CMAKE_CUDA_COMPILER_ID STREQUAL "ILUVATAR")
+        set_target_properties(cuvslam PROPERTIES
+            CUDA_RESOLVE_DEVICE_SYMBOLS OFF
+            CUDA_SEPARABLE_COMPILATION OFF
+        )
+    else()
+        set_target_properties(cuvslam PROPERTIES
+            CUDA_RESOLVE_DEVICE_SYMBOLS ON
+            CUDA_SEPARABLE_COMPILATION ON
+        )
+    endif()
 endif()
 
 # interface target for projects that link cuvslam libraries but not cuvslam top-level target

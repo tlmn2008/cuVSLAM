@@ -1,0 +1,47 @@
+{
+  "repo_name": "cuVSLAM",
+  "repo_url": "https://github.com/nvidia-isaac/cuVSLAM.git",
+  "source_commit": "57f42cc92d93eef47577d726789852a350b2a369",
+  "source_commit_date": "2026-07-22T22:19:46+04:00",
+  "source_branch": "main",
+  "sdk_version": "/usr/local/corex (IX-ML 4.4.0 / Driver 4.5.0, ivcore11)",
+  "compile_status": "success",
+  "test_status": "partial_pass",
+  "overall_status": "partial",
+  "tests_run": 215,
+  "tests_passed": 193,
+  "tests_failed": 3,
+  "tests_skipped": 19,
+  "summary": "将 NVIDIA Isaac cuVSLAM(CUDA 视觉 SLAM/里程计 C++ 库)迁移到 Iluvatar CoreX(ivcore11)：以 clang++ 替代 nvcc，架构 ivcore11，全部 14 个 .cu 与 266 个 .cpp 单元编译并链接为 libcuvslam.so 及 28 个测试二进制。ctest 二进制 14/15 通过、gtest 用例 193/196 通过；核心 Mono/RGBD/Multicamera/Inertial 追踪测试全部通过。仅 cuda_modules 的 3 个 SBA 光束平差用例因 ivcore11 无真实 FP64 而数值不达标；cuNLS/cuDSS(NVIDIA 闭源预编译)通过 USE_CUNLS=OFF 关闭 Multisensor 模式。",
+  "key_adaptations": [
+    "CUDA 编译器由 nvcc 切换为 CoreX clang++(CMAKE_CUDA_COMPILER)，CMAKE_CUDA_ARCHITECTURES=ivcore11",
+    "CMAKE_CUDA_FLAGS 强制 -std=c++17（clang 忽略 CMAKE_CUDA_STANDARD，否则 ixthrust 报错）",
+    "软件纹理桥 corex_compat/texture_bridge + corex_prelude.h(-include 强制注入) 提供 host/device 一致的 tex2D<>",
+    "对 ILUVATAR 关闭 CUDA_SEPARABLE_COMPILATION / CUDA_RESOLVE_DEVICE_SYMBOLS（-dlink 在该工具链失败）",
+    "CUDA 运行时由 cudart_static 改为 shared CUDA::cudart（CoreX 静态库依赖 libixthunk 的 CreateLogger 符号）",
+    "去除 nvcc 专有编译选项(--compiler-options/-G/-lineinfo)，改用 clang 原生 -fPIC -fvisibility=hidden",
+    "USE_CUNLS=OFF / USE_NVTX=OFF / USE_RERUN=OFF；OpenCV 用系统新 ABI(OpenCV_DIR) + 运行期 opencv_shim 前置 LD_LIBRARY_PATH"
+  ],
+  "terminal_blockers": [
+    "cuNLS/cuDSS 为 NVIDIA 闭源预编译库(cuDSS 从 developer.download.nvidia.com 下载, 无 ivcore11 变体)，无法为 ivcore11 重编 —— 通过 USE_CUNLS=OFF 关闭 Multisensor 模式",
+    "SBA 光束平差 GPU 内核 FP64 精度墙：ivcore11 无真实 double，SBABuildFullSystem/SBAEvaluateCost/SBAComputePredictedRelativeReduction 与 CPU double 参考数值不达标(3 例失败)"
+  ],
+  "workaround_blockers": [
+    "运行期 OpenCV ABI 冲突(CoreX 旧 ABI 遮蔽系统新 ABI)：建 opencv_shim 仅软链系统 OpenCV 并前置 LD_LIBRARY_PATH，camera_test 通过",
+    "nvcc→clang++ 工具链差异(纹理/分离编译/静态 cudart/C++ 标准/专有 flag)：逐项条件化适配，14 个 .cu + 266 个 .cpp 全部编译链接成功"
+  ],
+  "github": {
+    "fork_url": "https://github.com/tlmn2008/cuVSLAM",
+    "branch": "corex-port",
+    "default_branch": "main",
+    "default_branch_status": "not_attempted",
+    "compare_url": "https://github.com/nvidia-isaac/cuVSLAM/compare/main...tlmn2008:corex-port",
+    "push_commit": "",
+    "push_status": "pending",
+    "pushed_at": ""
+  },
+  "local_logs": {
+    "compile_log": "corex_port/build/compile.log",
+    "test_log": "corex_port/test/test.log"
+  }
+}

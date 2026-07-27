@@ -71,7 +71,12 @@ set(LIBS
     )
 
 if(USE_CUDA)
-    set(LIBS ${LIBS} CUDA::cudart_static)
+    # CoreX/ivcore11 has no self-contained static cudart (see cuVSLAMUtils.cmake); link shared.
+    if(CMAKE_CUDA_COMPILER MATCHES "corex")
+        set(LIBS ${LIBS} CUDA::cudart)
+    else()
+        set(LIBS ${LIBS} CUDA::cudart_static)
+    endif()
 endif()
 
 if(USE_RERUN)

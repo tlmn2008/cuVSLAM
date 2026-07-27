@@ -1,0 +1,42 @@
+{
+  "tests_run": 215,
+  "tests_passed": 193,
+  "tests_failed": 3,
+  "tests_skipped": 19,
+  "test_status": "partial_pass",
+  "runner": "ctest -V (build 目录, 15 个测试二进制 / gtest 用例级统计)",
+  "device": "2x Iluvatar BI-V150 (ivcore11), CUDA_VISIBLE_DEVICES=0,1",
+  "metrics": [
+    {
+      "name": "gtest_case_pass_rate",
+      "metric_type": "pass_rate",
+      "value": 98.47,
+      "unit": "percent",
+      "reference": "193/196 已执行 gtest 用例通过 (不含 19 个 upstream DISABLED_)",
+      "device": "Iluvatar BI-V150 (ivcore11)",
+      "source": "corex_port/test/test.log"
+    },
+    {
+      "name": "ctest_binary_pass_rate",
+      "metric_type": "pass_rate",
+      "value": 93.33,
+      "unit": "percent",
+      "reference": "14/15 ctest 测试二进制通过 (仅 cuda_modules_test 失败)",
+      "device": "Iluvatar BI-V150 (ivcore11)",
+      "source": "corex_port/test/test.log"
+    }
+  ],
+  "failed_cases": [
+    "Cuda.SBABuildFullSystem (cuda_modules_test) — SBA 稠密光束平差法线方程组构建, GPU(fp32) 与 CPU(double) isApprox(thresh=1) 不达标",
+    "Cuda.SBAEvaluateCost (cuda_modules_test) — SBA 代价评估, GPU/CPU 代价差超过阈值",
+    "Cuda.SBAComputePredictedRelativeReduction (cuda_modules_test) — SBA 预测相对下降量, 精度偏差超阈值"
+  ],
+  "skipped_reasons": [
+    {
+      "reason": "upstream gtest DISABLED_ cases (手动/性能/交互类测试, 上游默认禁用, 与 CoreX 无关)",
+      "count": 19,
+      "legitimate": true,
+      "note": "均为上游源码中以 DISABLED_ 前缀标注的用例(如 FIDTest.DISABLED_ManualValidSetups 等), gtest 默认不执行, 非因迁移或 CoreX 问题回避。"
+    }
+  ]
+}
