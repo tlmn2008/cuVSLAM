@@ -30,6 +30,12 @@
     "运行期 OpenCV ABI 冲突(CoreX 旧 ABI 遮蔽系统新 ABI)：建 opencv_shim 仅软链系统 OpenCV 并前置 LD_LIBRARY_PATH，camera_test 通过",
     "nvcc→clang++ 工具链差异(纹理/分离编译/静态 cudart/C++ 标准/专有 flag)：逐项条件化适配，14 个 .cu + 266 个 .cpp 全部编译链接成功"
   ],
+  "upstream_assessment": {
+    "upstreamable": "partial",
+    "nvidia_compatible": "guarded",
+    "notes": "构建按 CUDA_COMPILER_ID STREQUAL ILUVATAR/CMAKE_CUDA_COMPILER MATCHES corex 条件分支(架构、分离编译、cudart shared、去 nvcc flag)，未破坏原 NVIDIA 路径;软件纹理桥 corex_compat/ 为新增(仅 CoreX -include)。cuNLS/cuDSS 闭源无 ivcore11 档、SBA FP64 精度为 terminal。texture bridge 可作 opt-in 贡献。CLA 需签。"
+  },
+  "bugfixes": [],
   "github": {
     "fork_url": "https://github.com/tlmn2008/cuVSLAM",
     "branch": "corex-port",
