@@ -1,48 +1,41 @@
 {
+  "schema_version": "1.0",
   "repo": "cuVSLAM",
   "blockers": [
     {
       "id": "cunls-cudss-nvidia-prebuilt",
-      "title": "cuNLS / cuDSS 为 NVIDIA 专有预编译库，ivcore11 无对应实现",
-      "classification": "terminal",
-      "component": "Multisensor (cuNLS 非线性最小二乘) 模式",
       "symptom": "USE_CUNLS=ON 时 FetchContent 拉取的 cunls-src/CMakeLists.txt 硬编码 CMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc，且 AddCUDSS.cmake 从 developer.download.nvidia.com 下载 libcudss_static.a 预编译档（仅 x86_64/aarch64 + CUDA major 版本，无 ivcore11 变体）。",
+      "classification": "terminal",
+      "resolved": false,
       "attempt_made": "以 USE_CUNLS=ON 复现配置失败（CMAKE_CUDA_COMPILER nvcc 不存在 + cuDSS 无 ivcore11 档）。确认 cuDSS 为闭源二进制、无源码可用 clang++ 重编。按契约以 -DUSE_CUNLS=OFF 关闭，仅禁用 Multisensor 模式；核心 Mono/RGBD/Multicamera/Inertial 追踪不受影响。",
       "reproduce": "corex_port/build/configure_cunls_on.sh (see configure_cunls_on.log)",
-      "resolved": false,
       "workaround": "-DUSE_CUNLS=OFF (禁用 Multisensor 模式)"
     },
     {
       "id": "sba-fp64-precision",
-      "title": "SBA 光束平差 GPU 内核 FP64 精度墙（ivcore11 无真实 double）",
-      "classification": "terminal",
-      "component": "cuda_modules SBA (Sparse Bundle Adjustment)",
       "symptom": "cuda_modules_test 中 Cuda.SBABuildFullSystem / SBAEvaluateCost / SBAComputePredictedRelativeReduction 三例失败：GPU 结果(ivcore11 上 double 退化为 fp32)与 CPU double 参考的 isApprox/代价差在既定阈值(thresh=1)下不达标。光束平差法线方程组 J^T·J 在大量观测上累加，对 FP64 敏感。",
+      "classification": "terminal",
+      "resolved": false,
       "attempt_made": "确认失败为数值精度问题而非功能崩溃（内核在 GPU 正常执行、返回结果，仅与 double 参考不达标）。ivcore11 硬件无真实 FP64，double 路径按红线退化为 fp32，无法在保持参考数值一致性的前提下通过；放宽阈值只会掩盖真实精度损失，故如实保留为失败并归类 terminal。核心追踪测试（odometry/slam/imu/pipelines 等）全部通过。",
       "reproduce": "cd build && ctest -R cuda_modules_test -V",
-      "resolved": false,
       "workaround": "无（硬件级 FP64 缺失）；影响范围限于光束平差精调的数值一致性，核心追踪功能可用"
     },
     {
       "id": "opencv-abi-runtime-conflict",
-      "title": "运行期 OpenCV ABI 冲突：CoreX 自带旧 ABI OpenCV 遮蔽系统新 ABI OpenCV",
-      "classification": "workaround-able",
-      "component": "camera_test (及其它 OpenCV 依赖示例)",
       "symptom": "LD_LIBRARY_PATH 中 /usr/local/corex/lib64 优先，其自带 libopencv_core(旧 pre-cxx11 ABI) 在运行期遮蔽了 camera_test 链接的系统 libopencv(新 __cxx11 ABI)，导致 `symbol lookup error: libopencv_viz.so.406: undefined symbol _ZNK2cv11FileStorageixERKNSt7__cxx11...`。",
+      "classification": "workaround-able",
+      "resolved": true,
       "attempt_made": "已定位为纯运行期库解析顺序冲突（非编译/功能问题）。建立仅含系统 OpenCV 软链的 shim 目录 corex_port/opencv_shim 并前置到 LD_LIBRARY_PATH，使 OpenCV 统一走系统新 ABI，同时保留 CoreX cudart 等库。camera_test 随后全部通过。",
       "reproduce": "不设 shim 运行 build/bin/camera_test 复现；设 LD_LIBRARY_PATH=corex_port/opencv_shim:... 后通过",
-      "resolved": true,
       "workaround": "corex_port/opencv_shim (仅 OpenCV 软链) 前置 LD_LIBRARY_PATH"
     },
     {
       "id": "clang-cuda-toolchain-adaptations",
-      "title": "nvcc→clang++ 工具链差异（纹理/分离编译/静态 cudart/C++ 标准）",
-      "classification": "workaround-able",
-      "component": "构建系统 (CMake) 与设备编译",
       "symptom": "多处 nvcc 专有行为在 ivcore11 clang++ 下失效：无 tex2D 纹理硬件；CUDA_SEPARABLE_COMPILATION/-dlink 设备链接失败；libcudart_static.a 依赖 libixthunk 的 CreateLogger 符号未定义；CMAKE_CUDA_STANDARD 被忽略致 .cu 退回 C++14 与 ixthrust 冲突；--compiler-options/-G/-lineinfo 等 nvcc flag 不被识别。",
+      "classification": "workaround-able",
+      "resolved": true,
       "attempt_made": "逐项适配并复现验证通过：软件纹理桥(corex_compat/texture_bridge + corex_prelude.h force-include)提供 tex2D；对 ILUVATAR 关闭 CUDA_SEPARABLE_COMPILATION/CUDA_RESOLVE_DEVICE_SYMBOLS；改链接 shared CUDA::cudart；CMAKE_CUDA_FLAGS 强制 -std=c++17；条件化去除 nvcc 专有编译选项。最终 14 个 .cu + 266 个 .cpp 全部编译并链接成功。",
       "reproduce": "corex_port/build/configure.sh + compile.sh",
-      "resolved": true,
       "workaround": "见 CMakeLists.txt / cmake/cuVSLAMUtils.cmake / libs/*/CMakeLists.txt 中 CMAKE_CUDA_COMPILER MATCHES corex 与 CUDA_COMPILER_ID STREQUAL ILUVATAR 分支"
     }
   ]
