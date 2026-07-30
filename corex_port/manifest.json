@@ -4,7 +4,7 @@
   "source_commit": "57f42cc92d93eef47577d726789852a350b2a369",
   "source_commit_date": "2026-07-22T22:19:46+04:00",
   "source_branch": "main",
-  "sdk_version": "/usr/local/corex (IX-ML 4.4.0 / Driver 4.5.0, ivcore11)",
+  "sdk_version": "CoreX 4.5.0.20260630",
   "compile_status": "success",
   "test_status": "partial_pass",
   "overall_status": "partial",
