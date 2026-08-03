@@ -22,14 +22,6 @@
     "去除 nvcc 专有编译选项(--compiler-options/-G/-lineinfo)，改用 clang 原生 -fPIC -fvisibility=hidden",
     "USE_CUNLS=OFF / USE_NVTX=OFF / USE_RERUN=OFF；OpenCV 用系统新 ABI(OpenCV_DIR) + 运行期 opencv_shim 前置 LD_LIBRARY_PATH"
   ],
-  "terminal_blockers": [
-    "cuNLS/cuDSS 为 NVIDIA 闭源预编译库(cuDSS 从 developer.download.nvidia.com 下载, 无 ivcore11 变体)，无法为 ivcore11 重编 —— 通过 USE_CUNLS=OFF 关闭 Multisensor 模式",
-    "SBA 光束平差 GPU 内核 FP64 精度墙：ivcore11 无真实 double，SBABuildFullSystem/SBAEvaluateCost/SBAComputePredictedRelativeReduction 与 CPU double 参考数值不达标(3 例失败)"
-  ],
-  "workaround_blockers": [
-    "运行期 OpenCV ABI 冲突(CoreX 旧 ABI 遮蔽系统新 ABI)：建 opencv_shim 仅软链系统 OpenCV 并前置 LD_LIBRARY_PATH，camera_test 通过",
-    "nvcc→clang++ 工具链差异(纹理/分离编译/静态 cudart/C++ 标准/专有 flag)：逐项条件化适配，14 个 .cu + 266 个 .cpp 全部编译链接成功"
-  ],
   "upstream_assessment": {
     "upstream_status": "ready",
     "notes": "构建按 CUDA_COMPILER_ID STREQUAL ILUVATAR/CMAKE_CUDA_COMPILER MATCHES corex 条件分支(架构、分离编译、cudart shared、去 nvcc flag),未破坏原 NVIDIA 路径;软件纹理桥 corex_compat/ 为新增(仅 CoreX -include),可作 opt-in 贡献直接提 PR。cuNLS/cuDSS 闭源无 ivcore11 档、SBA FP64 精度为 terminal,不影响可合性。CLA 需签。"
