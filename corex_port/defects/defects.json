@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "repo": "cuVSLAM",
+  "target": "BI-V150",
+  "sdk_version": "CoreX 4.5.0.20260630",
+  "defects": [
+    {
+      "id": "sba-fp64-precision-downgrade",
+      "defect_key": "clang-codegen:fp64-no-native-double",
+      "desc": "光束平差(SBA)三例在 ivcore11 上 GPU 结果(double 静默降级 fp32)与 CPU double 参考的 isApprox/代价差超过既定阈值,数值不达标(wrong_result)。",
+      "suspected_component": "clang-codegen",
+      "component_detail": "设备端 double 算术静默按 fp32 处理;SBA 法线方程组 J^T·J 在大量观测上的双精度累加因此失真",
+      "confidence": "medium",
+      "symptom": "wrong_result",
+      "affected_tests": [
+        "Cuda.SBABuildFullSystem (cuda_modules_test) — GPU(fp32) 与 CPU(double) isApprox(thresh=1) 不达标",
+        "Cuda.SBAEvaluateCost (cuda_modules_test) — GPU/CPU 代价差超过阈值",
+        "Cuda.SBAComputePredictedRelativeReduction (cuda_modules_test) — 预测相对下降量精度偏差超阈值"
+      ],
+      "error": "cuda_modules_test: 3 FAILED — GPU(fp32) vs CPU(double) isApprox/代价差在 thresh=1 下不达标",
+      "root_cause_hypothesis": "ivcore11 无真 FP64 硬件,设备端 double 被静默降级为 fp32。光束平差对 J^T·J 大量观测累加对精度敏感,fp32 累加误差使 isApprox/代价残差超阈值。疑似 SDK 在无 FP64 时对 double 采取静默降级(不报错)的行为层面缺口。",
+      "evidence": "同输入两后端对照:同一 SBA 用例在 NVIDIA(真 double)参考下 isApprox 通过,ivcore11 上仅 double→fp32 一处不同即超阈值失败;其余 14/15 ctest 二进制、Mono/RGBD/Multicamera/Inertial 追踪用例全过,隔离出唯一变量为 FP64 精度。为运行期数值退化,复现依赖 SLAM 数据与求解流程,未做脱离仓库的独立最小件(confidence=medium)。",
+      "blocker_ref": "sba-fp64-precision",
+      "ref": "iluvatar-cuda-base: double 静默降级 fp32"
+    }
+  ],
+  "notes": "cuVSLAM 仅一个疑似 SDK 缺陷簇:SBA 光束平差 3 例因 ivcore11 无真 FP64、double 静默降级 fp32 而数值不达标(clang-codegen:fp64-no-native-double,跨仓复用键)。另一 corex-issue blocker(cunls-cudss-nvidia-prebuilt)为 NVIDIA 闭源预编译档无 ivcore11 变体的依赖问题、无对应失败/跳过的运行期用例,非 SDK 本体缺陷,不升级(见 blockers.json)。not-corex/已修 workaround 不在此。"
+}

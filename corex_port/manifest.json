@@ -27,6 +27,10 @@
     "notes": "构建按 CUDA_COMPILER_ID STREQUAL ILUVATAR/CMAKE_CUDA_COMPILER MATCHES corex 条件分支(架构、分离编译、cudart shared、去 nvcc flag),未破坏原 NVIDIA 路径;软件纹理桥 corex_compat/ 为新增(仅 CoreX -include),可作 opt-in 贡献直接提 PR。cuNLS/cuDSS 闭源无 ivcore11 档、SBA FP64 精度为 terminal,不影响可合性。CLA 需签。"
   },
   "bugfixes": [],
+  "defects_summary": {
+    "count": 1,
+    "high_confidence": 0
+  },
   "github": {
     "fork_url": "https://github.com/tlmn2008/cuVSLAM",
     "branch": "corex-port",
